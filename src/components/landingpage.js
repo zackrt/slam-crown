@@ -11,7 +11,7 @@ export class LandingPage extends Component {
           <h2>What does Slam Crown do?</h2>
             <ul className="instructions">
               <li classname="instruct-li">
-                If you have ever had a concussion or you are recovering from mild traumatic brain injury, create a free account!
+                If you had a concussion or you are recovering from mild traumatic brain injury, create a free account!
               </li>
               <li classname="instruct-li">
                 You can track your daily symptom recovery
