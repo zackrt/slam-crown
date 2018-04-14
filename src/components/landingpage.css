@@ -1,0 +1,75 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color:black;
+    background-color: rgb(255, 247, 0);
+    position: fixed;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    background-color: rgb(255, 247, 0);
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(2, 255, 2);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    float: right;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #2af00f}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.instructions {
+    display: block;
+    background-color: white;
+    color:rgb(3, 3, 193);
+    text-align: left;
+    margin: 10px;
+    padding:10px;
+}
+.instructions li {
+    padding: 3px;
+}
+
+@media ( min-width: 648px) {
+    form {
+        color: red;
+    }
+    input {
+        width: 50%;
+    }
+    .instructions {
+        width: 80%;
+        margin: 20px;
+    }
+}
