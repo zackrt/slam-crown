@@ -11,33 +11,32 @@ export class UserPage extends Component {
                 <h2>
                     Today's Report
                 </h2>
-                    <section>
-                        <form id="headache">
+                        <section className="reportform">
                         <div class="btn-group">
-                            <button>Headache</button>
-                            <button>Fever</button>
-                            <button>Nausea</button>
-                            <button>Fatigue</button>
+                            <select name="symptoms" size="4">
+                                <option value="headache">Headache</option>
+                                <option value="fatigue">Fatigue</option>
+                                <option value="fever">Fever</option>
+                                <option value="nausea">Nausea</option>
+                            </select>
                         </div>
-                        </form>
-                                    </section>
-                        <section>
-                            <form id="record-day">
-                            <div class="form-section">
+                        
+                        <form id="record-day">
+                        <div class="form-section">
                                 <label for="other-symptom-summary"className="text-area-label" >Other symptoms:</label>
                                 <textarea name="other-symptom-summary" rows="15"></textarea>
-                            </div>
-                            <button type="submit">Submit</button>
-                            <button type="reset">Reset</button>
-                            </form>
-                        </section>
-                        <section className="painslider">
-                            <label>Rate level of pain (1 - 5)</label>
+                                <section className="painslider" >
+                                    <label>Rate level of pain (1 - 5)</label>
+                                </section>
                         <div class="slidecontainer">
                             <input type="range" min="1" max="10" value="5" class="slider" id="myPainRange" />
                         </div>
-                        </section>
-      </div>
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                        </form>
+                </section>
+        </div>
     )
   }
 }
