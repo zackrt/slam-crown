@@ -24,7 +24,7 @@ export class LandingPage extends Component {
               </li>       
             </ul>
             <div className="brainimage">
-              <img alt="brain image" src="16487-NQNWIS.jpg" width="320px"/>
+              <img src="16487-NQNWIS.jpg" width="320px"/>
             </div>
       </div>
     )
