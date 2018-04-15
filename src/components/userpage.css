@@ -24,6 +24,7 @@
     background-color: #3e8e41;
 }
 .form-section {
+    position: absolute;
     display: block;
     margin:0 40px 5px; 
 }
@@ -64,7 +65,17 @@
 .painslider {
     margin: 10px 5px 20px;
 }
-.symptomselector option:checked{
+.symptomselector {
+    width: 260px;
+    font-size: 1.5em;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border: solid silver;
+    margin: 20px;
+}
+option:checked {
+    box-shadow: 0 0 0 3px rgb(0, 4, 255);
+    color: red;
     background: red;
-    color:yellow;
 }

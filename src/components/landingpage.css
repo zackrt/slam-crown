@@ -2,7 +2,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: scroll;
     color:black;
     background-color: rgb(255, 247, 0);
     position: fixed;
@@ -72,4 +72,7 @@ li.dropdown {
         width: 80%;
         margin: 20px;
     }
+}
+.brainimage {
+    width: 50%;
 }

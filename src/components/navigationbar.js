@@ -6,9 +6,12 @@ export class Navigationbar extends Component {
     return (
       <div>
         <nav className="NavBar">
+          <h1>
+            TBI reporting
+          </h1>
                     <div class="dropdown">
-                      <button class="dropbtn">Menu</button>
-                      <div class="dropdown-content">
+                      <button className="dropbtn">Menu</button>
+                      <div className="dropdown-content">
                         <a href="/login">Login</a>
                         <a href="/sign-up">Sign Up</a>
                         <a href="https://github.com/zackrt/SlamCrown">Github</a>

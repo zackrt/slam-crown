@@ -15,13 +15,13 @@ export class UserPage extends Component {
     return (
       <div>
             <h1>
-        Welcome back, {emailaddress}}
+        Welcome back, User EmailAddress
             </h1>
                 <h2>
                     Today's Report
                 </h2>
                         <section className="reportform">
-                        <div class="symptoms-btn-group">
+                        <div className="symptoms-btn-group">
                             <select className="symptomselector" name="symptoms" size="4" multiple onSelect>
                                 <option value="headache" selected >Headache</option>
                                 <option value="fatigue">Fatigue</option>
@@ -32,7 +32,7 @@ export class UserPage extends Component {
                         <form id="record-day">
                         <div class="form-section">
                                 <label for="other-symptom-summary"className="text-area-label" >Other symptoms:</label>
-                                <textarea name="other-symptom-summary" rows="15"></textarea>
+                                <textarea name="other-symptom-summary" rows="10" placeholder="confusion, lack of coordination, memory loss, vomiting, dizziness, ringing in the ears, sleepiness, and excessive fatigue"></textarea>
                                 <section className="painslider" >
                                     <label>Rate level of pain (1 - 5)</label>
                                 </section>
