@@ -62,9 +62,7 @@ li.dropdown {
 }
 
 @media ( min-width: 648px) {
-    form {
-        color: red;
-    }
+
     input {
         width: 50%;
     }
@@ -79,4 +77,7 @@ li.dropdown {
 }
 img {
 border-radius: 50%;
+}
+.signuplink {
+    margin: 20px;
 }

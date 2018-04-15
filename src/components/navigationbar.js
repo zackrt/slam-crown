@@ -6,9 +6,6 @@ export class Navigationbar extends Component {
     return (
       <div>
         <nav className="NavBar">
-          <h1>
-            TBI reporting
-          </h1>
                     <div className="dropdown">
                       <button className="dropbtn">Menu</button>
                       <div className="dropdown-content">
