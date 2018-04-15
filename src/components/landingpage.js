@@ -11,7 +11,7 @@ export class LandingPage extends Component {
           <section className ="description">
             <ul className="instructions">
               <li className="instruct-li">
-                If you had a concussion or you are recovering from mild traumatic brain injury, create a free account!
+                If you've had a concussion or you are recovering from mild traumatic brain injury, create a free account!
               </li>
               <li className="instruct-li">
                 You can track your daily symptom recovery
