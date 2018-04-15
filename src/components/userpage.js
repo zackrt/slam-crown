@@ -2,25 +2,33 @@ import React, { Component } from 'react';
 
 import './userpage.css';
 export class UserPage extends Component {
+    state = {
+        symptoms: [],
+        painlevel: "",
+        othersymptom:""
+    };
+    handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(this.state);
+    } 
   render() {
     return (
       <div>
             <h1>
-        Welcome back, User
+        Welcome back, {emailaddress}}
             </h1>
                 <h2>
                     Today's Report
                 </h2>
                         <section className="reportform">
-                        <div class="btn-group">
-                            <select name="symptoms" size="4">
-                                <option value="headache">Headache</option>
+                        <div class="symptoms-btn-group">
+                            <select className="symptomselector" name="symptoms" size="4" multiple onSelect>
+                                <option value="headache" selected >Headache</option>
                                 <option value="fatigue">Fatigue</option>
-                                <option value="fever">Fever</option>
+                                <option value="fever" selected >Fever</option>
                                 <option value="nausea">Nausea</option>
                             </select>
                         </div>
-                        
                         <form id="record-day">
                         <div class="form-section">
                                 <label for="other-symptom-summary"className="text-area-label" >Other symptoms:</label>

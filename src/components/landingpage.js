@@ -23,6 +23,7 @@ export class LandingPage extends Component {
                 * Slam Crown is not method or replacement for medical treatment!
               </li>       
             </ul>
+            <img src="16487-NQNWIS.jpg"/>
       </div>
     )
   }
