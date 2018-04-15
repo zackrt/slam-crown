@@ -9,6 +9,7 @@ export class LandingPage extends Component {
         <a href="/sign-up">Sign Up now!</a>
         <h1>This is a simple and easy concussion & Traumatic Brain Injury reporting app</h1>
           <h2>What does Slam Crown do?</h2>
+          <section className ="description">
             <ul className="instructions">
               <li className="instruct-li">
                 If you had a concussion or you are recovering from mild traumatic brain injury, create a free account!
@@ -26,6 +27,7 @@ export class LandingPage extends Component {
             <div className="brainimage">
               <img alt="" src="16487-NQNWIS.jpg" width="320px"/>
             </div>
+            </section>
       </div>
     )
   }

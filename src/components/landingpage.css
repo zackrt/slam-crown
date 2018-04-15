@@ -5,7 +5,7 @@ ul {
     overflow: scroll;
     color:black;
     background-color: rgb(255, 247, 0);
-    position: fixed;
+    position: sticky;
 }
 li a, .dropbtn {
     display: inline-block;
@@ -75,4 +75,8 @@ li.dropdown {
 }
 .brainimage {
     width: 50%;
+    margin:20px;
+}
+img {
+border-radius: 50%;
 }
