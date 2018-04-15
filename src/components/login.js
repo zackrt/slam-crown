@@ -7,7 +7,7 @@ export class Login extends Component {
     return (
         <div>
         <h1>
-        Login to Slam Crown <i class="fi-crown"></i>
+        Login to Slam Crown
         </h1>
         <form>
     <fieldset>

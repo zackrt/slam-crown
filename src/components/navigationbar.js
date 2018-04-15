@@ -9,7 +9,7 @@ export class Navigationbar extends Component {
           <h1>
             TBI reporting
           </h1>
-                    <div class="dropdown">
+                    <div className="dropdown">
                       <button className="dropbtn">Menu</button>
                       <div className="dropdown-content">
                         <a href="/login">Login</a>
