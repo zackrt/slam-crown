@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import SymptomSelector from './SymptomSelector';
 import './userpage.css';
 export class UserPage extends Component {
     state = {
@@ -20,15 +21,9 @@ export class UserPage extends Component {
                 <h2>
                     Today's Report
                 </h2>
-                        <section className="reportform">
-                        <div className="symptoms-btn-group">
-                            <select className="symptomselector" name="symptoms" size="4" multiple onSelect>
-                                <option value="headache" selected >Headache</option>
-                                <option value="fatigue">Fatigue</option>
-                                <option value="fever" selected >Fever</option>
-                                <option value="nausea">Nausea</option>
-                            </select>
-                        </div>
+
+                        <SymptomSelector /> 
+                <section className="reportform">           
                         <form id="record-day">
                         <div className="form-section">
                                 <label for="other-symptom-summary"className="text-area-label" >Other symptoms:</label>

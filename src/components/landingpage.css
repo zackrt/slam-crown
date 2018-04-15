@@ -50,15 +50,32 @@ li.dropdown {
     display: block;
 }
 .instructions {
-    display: block;
+    display: inline-block;
     background-color: white;
     color:rgb(3, 3, 193);
     text-align: left;
     margin: 10px;
     padding:10px;
+    width: 40%;
 }
 .instructions li {
     padding: 3px;
+}
+
+.brainimage {
+    display: inline-block;
+    margin:20px;
+    width:35%;
+
+}
+img {
+border-radius: 50%;
+}
+.signuplink {
+    margin: 20px;
+}
+.description {
+    display: inline;
 }
 
 @media ( min-width: 648px) {
@@ -67,17 +84,7 @@ li.dropdown {
         width: 50%;
     }
     .instructions {
-        width: 80%;
+        width: 50%;
         margin: 20px;
     }
-}
-.brainimage {
-    width: 50%;
-    margin:20px;
-}
-img {
-border-radius: 50%;
-}
-.signuplink {
-    margin: 20px;
 }
