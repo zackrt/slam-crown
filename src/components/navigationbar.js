@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import './navigationBar.css';
 
 export class NavigationBar extends Component {
