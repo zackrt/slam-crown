@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './navigationbar.css';
+import './navigationBar.css';
 
-export class Navigationbar extends Component {
+export class NavigationBar extends Component {
   render() {
     return (
       <div>
