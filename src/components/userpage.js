@@ -21,7 +21,6 @@ export class UserPage extends Component {
                 <h2>
                     Today's Report
                 </h2>
-
                         <SymptomSelector /> 
                 <section className="reportform">           
                         <form id="record-day">

@@ -12,7 +12,7 @@ h1 {
     font: helvetica;
 }
 h2 {
-    padding-left: 35px;
+    padding-left: 22%;
 }
 
 legend {
@@ -40,6 +40,11 @@ input[type=submit] {
 }
 input[type=submit]:hover {
     background-color: palegreen;
+}
+.neuronsimg {
+    z-index: -1;
+    position: absolute;
+    margin:0 20%;
 }
 
 @media ( min-width: 648px) {
