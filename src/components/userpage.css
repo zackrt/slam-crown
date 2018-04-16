@@ -73,8 +73,3 @@
     border: solid silver;
     margin: 20px;
 }
-option:checked {
-    box-shadow: 0 0 0 3px rgb(0, 4, 255);
-    color: red;
-    background: red;
-}
