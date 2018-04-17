@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import SymptomSelector from './SymptomSelector';
-import './userpage.css';
+import './UserPage.css';
 export class UserPage extends Component {
     state = {
         symptoms: [],

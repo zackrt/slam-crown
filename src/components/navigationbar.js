@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './navigationBar.css';
+import './NavigationBar.css';
 
 export class NavigationBar extends Component {
   render() {
@@ -21,5 +21,5 @@ export class NavigationBar extends Component {
   }
 }
 
-export default Navigationbar
+export default NavigationBar
 

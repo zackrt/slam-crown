@@ -3,12 +3,12 @@ import './App.css';
 
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
-import LandingPage from './components/landingpage';
-import SignUp from './components/signupform';
-import Login from './components/login';
-import UserPage from './components/userpage';
-import UserReportHistory from './components/userreporthistory';
-import Navigationbar from './components/navigationbar';
+import LandingPage from './components/LandingPage';
+import SignUp from './components/SignupForm';
+import Login from './components/Login';
+import UserPage from './components/UserPage';
+import UserReportHistory from './components/UserReportHistory';
+import Navigationbar from './components/NavigationBar';
 
 export default function App(props) {
     return (
