@@ -78,7 +78,7 @@
 @media ( min-width: 648px) {
     .symptomselector {
         width:60%;
-        margin:auto;
+        margin:20px auto;
     }
     .other-symptom-summary {
         font-size: 1em;
