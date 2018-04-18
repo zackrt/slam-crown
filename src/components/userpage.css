@@ -25,7 +25,7 @@
 .form-section {
     position: absolute;
     display: block;
-    margin:0 40px 5px; 
+    margin:5px 60px 5px; 
 }
 .text-area-label {
     display:block;
@@ -34,10 +34,10 @@
 
 .slider {
     -webkit-appearance: none;
-    width: 50%;
+    width: 70%;
     height: 15px;
     border-radius: 5px;   
-    background: #d3d3d3;
+    background: #dedede;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
@@ -71,4 +71,8 @@
     text-align: center;
     border: solid silver;
     margin: 20px;
+    border-radius: 5%;
+}
+.other-symptom-summary {
+    font-size: .8em;
 }

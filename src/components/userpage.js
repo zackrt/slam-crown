@@ -26,7 +26,7 @@ export class UserPage extends Component {
                         <form id="record-day">
                         <div className="form-section">
                                 <label for="other-symptom-summary"className="text-area-label" >Other symptoms:</label>
-                                <textarea name="other-symptom-summary" rows="10" placeholder="confusion, lack of coordination, memory loss, vomiting, dizziness, ringing in the ears, sleepiness, and excessive fatigue"></textarea>
+                                <textarea className="other-symptom-summary" rows="10" placeholder="confusion, lack of coordination, memory loss, vomiting, dizziness, ringing in the ears, sleepiness, and excessive fatigue"></textarea>
                                 <section className="painslider" >
                                     <label>Rate level of pain (1 - 5)</label>
                                 </section>
