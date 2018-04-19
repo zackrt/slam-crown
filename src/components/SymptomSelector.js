@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import SymptomOption from './SymptomOption';
 
 export class SymptomSelector extends Component {
-    symptoms =["Headache", "Fatigue","Fever", "Nausea"];
+    symptoms =["Headache", "Fatigue", "Fever", "Nausea"];
     toggleSymptom = (symptom) => {
-        if (!symptom in this.state.activeSymptoms) {
+        if (this.state.activeSymptoms.indexOf(symptom) === -1) {
             this.setState({
                 activeSymptoms:[...this.state.activeSymptoms, symptom]
             })
