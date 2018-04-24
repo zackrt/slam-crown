@@ -20,7 +20,6 @@ export class SignUp extends Component {
         <h2>
             Report on your Concussion & TBI Recovery
         </h2>
-        <img className="neuronsimg"alt="" src="neurons-background.jpg" width="60%"/>
             <form onSubmit={this.handleSubmit}>
                 <fieldset>
                     <legend>Sign Up:</legend>
