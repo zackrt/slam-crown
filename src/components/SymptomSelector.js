@@ -12,7 +12,7 @@ export class SymptomSelector extends Component {
       
         else {
             this.setState({
-                activeSymptoms : this.state.activeSymptoms.filter(s => s != symptom)
+                activeSymptoms : this.state.activeSymptoms.filter(s => s !== symptom)
             })
         }
     };
