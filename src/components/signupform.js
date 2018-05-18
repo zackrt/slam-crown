@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 import './SignupForm.css';
 
 export class SignUp extends Component {
@@ -10,7 +10,13 @@ export class SignUp extends Component {
     };
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        axios.post('http://localhost:8080/api/users', 
+        {
+            emailAddress:this.state.email,
+            password:this.state.password,
+            dateOfConcussion:this.state.dateOfConcussion
+        }).then(response => console.log(response));
+        //console.log(this.state);
     }  
     updateModel = (key, e) => {
         this.setState({[key]:e.target.value})
