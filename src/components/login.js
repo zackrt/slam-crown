@@ -9,16 +9,24 @@ export class Login extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8080/api/login',
+    axios.post('http://localhost:8080/api/auth',
     {
       emailAddress:this.state.email,
       password:this.state.password
-    }).then(response => console.log(response));
+    }).then(response => {
+      console.log(response);
+      const token = response.data.token;
+      localStorage.setItem('token',token);
+      // if res.token: true, persist to localStorage and redirect to user specific userpage, else err
+    }).catch(error => {
+      console.log(error);
+      alert("Unable to login!");
+    });
 
-  updateModel = (key, e) => {
-    this.setState({[key]:e.target.value})
-  }; 
-}
+  }
+    updateModel = (key, e) => {
+      this.setState({[key]:e.target.value})
+    }; 
   render() {
     console.log(this.state);
     return (
@@ -26,7 +34,7 @@ export class Login extends Component {
           <h1>
             Login to Slam Crown
           </h1>
-            <form>
+            <form onSubmit={this.handleSubmit}>
               <fieldset>
                 <legend>Login:</legend>
                   <span>Email: </span>
@@ -40,9 +48,10 @@ export class Login extends Component {
                   <br/>
                   <span>Password: </span>
                   <input 
-                    type="text" 
+                    type="password" 
                     placeholder="password" 
                     id="user-password" 
+                    onInput={e => this.updateModel('password',e)}
                     required 
                   />
                   <br/>  

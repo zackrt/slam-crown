@@ -8,6 +8,10 @@ export class UserPage extends Component {
         painlevel: "",
         othersymptom:""
     };
+    // checking auth
+    componentDidMount = () => {
+        //read/get token req from localStorage.getItem , if token: exists -> then request with token, else redirect to /login with err
+    };
     handleSubmit = (e) => {
         e.preventDefault();
         console.log(this.state);

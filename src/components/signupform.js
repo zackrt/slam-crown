@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+//import { withRouter } from 'react-router-dom'
 import axios from 'axios';
 import './SignupForm.css';
 
@@ -21,6 +22,10 @@ export class SignUp extends Component {
     updateModel = (key, e) => {
         this.setState({[key]:e.target.value})
     }
+// to push from create on sign-up page to login aka api/auth page
+// this.props.history.push('api/auth')
+// SomeComponent
+// export default withRouter(SomeComponent)
     
   render() {
     console.log(this.state);
