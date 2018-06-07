@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import SymptomSelector from './SymptomSelector';
 import './UserPage.css';
+import Axios from 'axios';
 export class UserPage extends Component {
     state = {
         symptoms: [],
@@ -14,6 +15,7 @@ export class UserPage extends Component {
     };
     handleSubmit = (e) => {
         e.preventDefault();
+        axios.post('localhost:8080/api/userpage') 
         console.log(this.state);
     };
   render() {
