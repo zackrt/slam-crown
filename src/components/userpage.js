@@ -2,32 +2,62 @@ import React, { Component } from 'react';
 
 import SymptomSelector from './SymptomSelector';
 import './UserPage.css';
-import Axios from 'axios';
+import axios from 'axios';
 export class UserPage extends Component {
     state = {
-        symptoms: [],
+        symptoms: ['Headache','Fatigue', 'Nausea','Fever'],
         painlevel: "",
         othersymptom:""
     };
+    setTextArea(symptomtext) {
+        this.setState({
+            symptomtext: "" // Shorthand for editing: editing
+        });
+    }
     // checking auth
     componentDidMount = () => {
+        const token = localStorage.getItem('token');  
+        if (!token){
+            //if not token, redirect to /login
+            this.props.history.push('/login')
+        }
+        axios.get('http://localhost:8080/api/userpage', {
+            headers : {
+                Authorization: `Bearer ${token}`
+            }  
+        })
+        .then(response => {
+            console.log(response);
+            this.setState({
+                emailAddress : response.data.emailAddress
+            })
+        })
+        .catch(error =>{
+            console.log(error);
+            alert('Bad Credentials!');
+            this.props.history.push('/login');
+        })
         //read/get token req from localStorage.getItem , if token: exists -> then request with token, else redirect to /login with err
     };
     handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('localhost:8080/api/userpage') 
+        axios.post('http://localhost:8080/api/userpage') 
         console.log(this.state);
+        
     };
   render() {
     return (
       <div>
             <h1>
-        Welcome back, User EmailAddress
+        Welcome back, User {this.state.emailAddress}
             </h1>
                 <h2>
                     Today's Report
                 </h2>
-                        <SymptomSelector /> 
+                        <SymptomSelector 
+                            onUpdate = {(selectedSymptoms) => 
+                                this.setState({selectedSymptoms})}
+                        /> 
                 <section className="reportform">           
                         <form id="record-day">
                         <div className="form-section">

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import './Login.css';
-
+import {withRouter} from 'react-router-dom';
 export class Login extends Component {
   state = {
     email: "",
@@ -17,20 +17,21 @@ export class Login extends Component {
       console.log(response);
       const token = response.data.token;
       localStorage.setItem('token',token);
-      // if res.token: true, persist to localStorage and redirect to user specific userpage, else err
+      // *If res.token: true, persist to localStorage and redirect to user specific userpage, else err with .props.history is redirect
+      this.props.history.push('/userpage')
     }).catch(error => {
       console.log(error);
       alert("Unable to login!");
     });
-
+    
   }
-    updateModel = (key, e) => {
-      this.setState({[key]:e.target.value})
-    }; 
+  updateModel = (key, e) => {
+    this.setState({[key]:e.target.value})
+  }; 
   render() {
     console.log(this.state);
     return (
-        <div>
+      <div>
           <h1>
             Login to Slam Crown
           </h1>
@@ -44,7 +45,7 @@ export class Login extends Component {
                     id="email-address" 
                     onInput={e => this.updateModel('email',e)} 
                     required 
-                  />
+                    />
                   <br/>
                   <span>Password: </span>
                   <input 
@@ -62,4 +63,5 @@ export class Login extends Component {
     )
   }
 }
-export default Login;
+//this sends authorized users to login withRouter and React-router-dom
+export default withRouter(Login);
