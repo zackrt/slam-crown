@@ -12,13 +12,13 @@ export class SymptomSelector extends Component {
         activeSymptoms : []
     }
   render() {
-
     return (
         <div className="symptoms-btn-group">
             <div className="symptomselector" >
                 {this.symptoms.map(symptom => <SymptomOption 
+                key={symptom}
                 name={symptom} 
-                selected={true}
+                selected={this.state.activeSymptoms.indexOf(symptom) !== -1}
                 onClick={ () => this.toggleSymptom(symptom)}
                 />)}
             </div>

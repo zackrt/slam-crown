@@ -5,15 +5,9 @@ import './UserPage.css';
 import axios from 'axios';
 export class UserPage extends Component {
     state = {
-        symptoms: ['Headache','Fatigue', 'Nausea','Fever'],
-        painlevel: "",
+        painLevel: 3,
         othersymptom:""
     };
-    setTextArea(symptomtext) {
-        this.setState({
-            symptomtext: "" // Shorthand for editing: editing
-        });
-    }
     // checking auth
     componentDidMount = () => {
         const token = localStorage.getItem('token');  
@@ -41,11 +35,11 @@ export class UserPage extends Component {
     };
     handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8080/api/userpage') 
+        axios.put('http://localhost:8080/api/userpage') 
         console.log(this.state);
-        
     };
   render() {
+    console.log(this.state);
     return (
       <div>
             <h1>
@@ -61,16 +55,29 @@ export class UserPage extends Component {
                 <section className="reportform">           
                         <form id="record-day">
                         <div className="form-section">
-                                <label for="other-symptom-summary"className="text-area-label" >Other symptoms:</label>
-                                <textarea className="other-symptom-summary" rows="10" placeholder="confusion, lack of coordination, memory loss, vomiting, dizziness, ringing in the ears, sleepiness, and excessive fatigue"></textarea>
+                                <label htmlFor="other-symptom-summary"className="text-area-label" >Other symptoms:</label>
+                                <textarea 
+                                    className="other-symptom-summary"
+                                    rows="10" 
+                                    placeholder="confusion, lack of coordination, memory loss, vomiting, dizziness, ringing in the ears, sleepiness, and excessive fatigue"
+                                    value={this.state.othersymptom} 
+                                    onChange={(e)=>{this.setState({othersymptom:e.target.value})}}
+                                >
+                                </textarea>
                                 <section className="painslider" >
                                     <label>Rate level of pain (1 - 5)</label>
                                 </section>
                         <div className="slidecontainer">
-                            <input type="range" min="1" max="10" value="5" class="slider" id="myPainRange" />
+                            <input 
+                                onChange={(e)=>{this.setState({painLevel:e.target.value})}}
+                                type="range" 
+                                min="1" 
+                                max="5" 
+                                value={this.state.painLevel}
+                                className="slider" id="myPainRange" 
+                            />
                         </div>
                             <button type="submit">Submit</button>
-                            <button type="reset">Reset</button>
                         </div>
                         </form>
                 </section>
