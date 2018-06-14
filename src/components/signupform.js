@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 //import { withRouter } from 'react-router-dom'
 import axios from 'axios';
 import './SignupForm.css';
-import API_URL from '../config';
+import {API_URL} from '../config';
 export class SignUp extends Component {
     state = {
         email: "",
@@ -11,6 +11,7 @@ export class SignUp extends Component {
     };
     handleSubmit = (e) => {
         e.preventDefault();
+        console.log("API URL IN SIGNUP",API_URL);
         axios.post(`${API_URL}/api/users`, 
         {
             emailAddress:this.state.email,
