@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import SymptomSelector from './SymptomSelector';
 import './UserPage.css';
 import axios from 'axios';
+import API_URL from '../config';
 export class UserPage extends Component {
     state = {
         painLevel: 3,
