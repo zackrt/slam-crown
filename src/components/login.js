@@ -9,7 +9,7 @@ export class Login extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8080/api/auth',
+    axios.post(`${API_URL}/api/auth`,
     {
       emailAddress:this.state.email,
       password:this.state.password

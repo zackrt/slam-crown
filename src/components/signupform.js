@@ -11,7 +11,7 @@ export class SignUp extends Component {
     };
     handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://localhost:8080/api/users', 
+        axios.post(`${API_URL}api/users`, 
         {
             emailAddress:this.state.email,
             password:this.state.password,
@@ -50,7 +50,7 @@ export class SignUp extends Component {
                         <br />
                         <span>Password:</span>
                         <input 
-                            type="text" 
+                            type="password" 
                             placeholder="password" 
                             onInput={e => this.updateModel('password',e)} 
                             required 

@@ -15,7 +15,7 @@ export class UserPage extends Component {
             //if not token, redirect to /login
             this.props.history.push('/login')
         }
-        axios.get('http://localhost:8080/api/userpage', {
+        axios.get(`${API_URL}/api/userpage`, {
             headers : {
                 Authorization: `Bearer ${token}`
             }  

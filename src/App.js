@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-
+import API_URL from '.config';
 import LandingPage from './components/LandingPage';
 import SignUp from './components/SignupForm';
 import Login from './components/Login';

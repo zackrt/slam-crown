@@ -17,7 +17,7 @@ export class LandingPage extends Component {
                 You can track your daily symptom recovery
               </li>
               <li className="instruct-li">
-                Note the occurences of headaches, fevers and fatigue, etc.
+                Note the occurences of headaches, fevers, and fatigue, etc.
               </li>
               <li className="instruct-li">
                 * Slam Crown is not method or replacement for medical treatment!
