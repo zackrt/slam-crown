@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './Login.css';
 import {withRouter} from 'react-router-dom';
-import API_URL from '../config';
+import {API_URL} from '../config';
 export class Login extends Component {
   state = {
     email: "",
