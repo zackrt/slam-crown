@@ -1,1 +1,1 @@
-exports.API_URL = process.env.API_URL || 'https://boiling-falls-95973.herokuapp.com';
+exports.API_URL = process.env.API_URL || 'https://slamcrown.herokuapp.com';
