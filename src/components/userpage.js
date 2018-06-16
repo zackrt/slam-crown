@@ -37,7 +37,7 @@ export class UserPage extends Component {
     handleSubmit = (e) => {
         e.preventDefault();
         const data = Object.assign({}, this.state, {selectedSymptoms:this.state.selectedSymptoms.join()})
-        axios.put(`${API_URL}api/userpage`, data)
+        axios.put(`${API_URL}/api/userpage`, data)
         // send the put with this.state, and then display it,  
         console.log("state on submit",this.state);
     };
