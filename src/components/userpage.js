@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {withRouter} from 'react-router-dom'
 import SymptomSelector from './SymptomSelector';
 import './UserPage.css';
 import axios from 'axios';
@@ -36,8 +36,10 @@ export class UserPage extends Component {
     };
     handleSubmit = (e) => {
         e.preventDefault();
-        axios.put('http://localhost:8080/api/userpage') 
-        console.log(this.state);
+        const data = Object.assign({}, this.state, {selectedSymptoms:this.state.selectedSymptoms.join()})
+        axios.put(`${API_URL}api/userpage`, data)
+        // send the put with this.state, and then display it,  
+        console.log("state on submit",this.state);
     };
   render() {
     console.log(this.state);
@@ -54,7 +56,7 @@ export class UserPage extends Component {
                                 this.setState({selectedSymptoms})}
                         /> 
                 <section className="reportform">           
-                        <form id="record-day">
+                        <form id="record-day" onSubmit={this.handleSubmit}>
                         <div className="form-section">
                                 <label htmlFor="other-symptom-summary"className="text-area-label" >Other symptoms:</label>
                                 <textarea 
@@ -87,4 +89,4 @@ export class UserPage extends Component {
   }
 }
 
-export default UserPage
+export default withRouter(UserPage)

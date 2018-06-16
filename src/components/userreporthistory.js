@@ -1,6 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import axios from 'axios';
+import {API_URL} from '../config';
 
+//pull from the database all of this.state after submit from userpage
 export class UserReportHistory extends Component {
+  componentDidMount = () => {
+    axios.get(`${API_URL}/api/userpage`)
+      .then(response => {
+  
+      })
+      .catch(error => {
+        
+      })
+  }
   render() {
     return (
       <div>
@@ -8,7 +20,9 @@ export class UserReportHistory extends Component {
           Past symptom history
         </h2>
           <section>
-            Display date & symptoms reported
+             symptoms reported:
+             
+             
           </section>
       </div>
     )
