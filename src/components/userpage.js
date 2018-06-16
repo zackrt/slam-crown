@@ -12,6 +12,7 @@ export class UserPage extends Component {
     // checking auth
     componentDidMount = () => {
         const token = localStorage.getItem('token');  
+        console.log(token, 'Token in userpage!')
         if (!token){
             //if not token, redirect to /login
             this.props.history.push('/login')
@@ -22,7 +23,7 @@ export class UserPage extends Component {
             }  
         })
         .then(response => {
-            console.log(response);
+            //console.log(response);
             this.setState({
                 emailAddress : response.data.emailAddress
             })
@@ -36,8 +37,16 @@ export class UserPage extends Component {
     };
     handleSubmit = (e) => {
         e.preventDefault();
+        const token = localStorage.getItem('token');
         const data = Object.assign({}, this.state, {selectedSymptoms:this.state.selectedSymptoms.join()})
-        axios.put(`${API_URL}/api/userpage`, data)
+        axios.put(`${API_URL}/api/userpage`, data, {
+            headers : {
+                Authorization: `Bearer ${token}`
+            }  
+        }).then(response => {
+            //console.log(response);
+            this.props.history.push('/userreporthistory');
+        })
         // send the put with this.state, and then display it,  
         console.log("state on submit",this.state);
     };
