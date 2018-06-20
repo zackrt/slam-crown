@@ -2,12 +2,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import {API_URL} from '../config';
 
-<<<<<<< HEAD
-//pull from the database all of this.state after submit from userpage, this needs token from localstorage, 
-=======
 //pull from the database all of this.state after submit from userpage
 //from feedback, make a way to return user BACK to either Login and login them out (with instructions to return)
->>>>>>> f6763eb5078d4f5ed7207e74c11d8b62efc98050
 export class UserReportHistory extends Component {
   state = {
     painLevel:'',
