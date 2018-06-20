@@ -1,0 +1,4 @@
+UX: The application doesn't appear to have a way to add multiple entries without the back button on the browser. Once an entry is added, I didn't see how to add another? 
+Concept: The concept could be further developed. Doing something more than creating a log of entries (eg, a list) might be helpful? v (added ul and li)
+Possibly further develop the concept? Design (optional): For current web design, see sources such as materialize.css for inspiration on forms and Google's material design. v
+See also the themes as well as components for current best practice in design. Good project and great cause. A little more development might be helpful

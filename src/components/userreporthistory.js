@@ -9,6 +9,10 @@ export class UserReportHistory extends Component {
     othersymptom:'',
     selectedSymptoms:''
 };
+handleClick = () => {
+  this.props.history.push('/login');
+  }
+
   componentDidMount = () => {
     const token = localStorage.getItem('token');
     axios.get(`${API_URL}/api/userpage`, {
@@ -35,12 +39,15 @@ export class UserReportHistory extends Component {
           Past symptom history
         </h2>
           <section>
-             Past symptoms reported:
-             <h3>{this.state.selectedSymptoms}</h3>
+             <ul className="daily-report-ul">
+               Past symptoms reported:
+             <li><h3>{this.state.selectedSymptoms}</h3></li>
              <h3>{this.state.othersymptom}</h3>
              <h3>{this.state.painLevel}</h3>
-             
+             </ul>
           </section>
+          <section>Come back tomorrow, we hope you have a speedy recovery!</section>
+          <button onClick={this.handleClick} type="submit">Log Out</button>
       </div>
     )
   }
