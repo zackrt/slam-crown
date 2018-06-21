@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import {API_URL} from '../config';
-
+import './UserReportHistory.css'
 //pull from the database all of this.state after submit from userpage
 //from feedback, make a way to return user BACK to either Login and login them out (with instructions to return)
 export class UserReportHistory extends Component {
@@ -48,7 +48,7 @@ handleClick = () => {
              </ul>
           </section>
           <section>Come back tomorrow, we hope you have a speedy recovery!</section>
-          <button onClick={this.handleClick} type="submit">Log Out</button>
+          <button onClick={this.handleClick} type="button">Log Out</button>
       </div>
     )
   }

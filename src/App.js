@@ -13,17 +13,20 @@ export default function App(props) {
     return (
         <Router>
             <div className="app">
-                <Navigationbar />  
-                <header>
-                    <h1><Link to="/">Welcome to Slam Crown</Link></h1>
-                </header>
-                <main>
-                    <Route exact path="/" component={LandingPage} />
-                    <Route exact path="/sign-up" component={SignUp} />
-                    <Route exact path="/login" component={Login} />
-                    <Route exact path="/userpage" component={UserPage} />
-                    <Route exact path="/userreporthistory" component={UserReportHistory} />
-                </main>
+                    <Navigationbar />  
+                        <header>
+                        <h1 className="link-title">
+                        <Link className="link-title" to="/">Welcome to Slam Crown</Link>
+                        </h1>
+                         </header>
+                            <main>
+                                <Route exact path="/" component={LandingPage} />
+                                <Route exact path="/sign-up" component={SignUp} />
+                                <Route exact path="/login" component={Login} />
+                                <Route exact path="/userpage" component={UserPage} />
+                                <Route exact path="/userreporthistory" component={UserReportHistory} />
+                            </main>
+                <script type="text/javascript" src="js/materialize.min.js"></script>
             </div>
         </Router>
     );

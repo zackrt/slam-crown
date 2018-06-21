@@ -65,17 +65,20 @@ export class UserPage extends Component {
                                 this.setState({selectedSymptoms})}
                         /> 
                 <section className="reportform">           
-                        <form id="record-day" onSubmit={this.handleSubmit}>
+                        <form className="record-day"id="record-day" onSubmit={this.handleSubmit}>
                         <div className="form-section">
-                                <label htmlFor="other-symptom-summary"className="text-area-label" >Other symptoms:</label>
+                        <div className="input-field col s12">
+                                <label for="textarea1" htmlFor="other-symptom-summary"className="text-area-label" >(old)Other symptoms:</label>
                                 <textarea 
-                                    className="other-symptom-summary"
+                                    id="textarea1" 
+                                    className="other-symptom-summary materialize-textarea"
                                     rows="10" 
-                                    placeholder="confusion, lack of coordination, memory loss, vomiting, dizziness, ringing in the ears, sleepiness, and excessive fatigue"
+                                    placeholder="Irritability, confusion, lack of coordination, memory loss, vomiting, dizziness, ringing in the ears, and/or sleepiness"
                                     value={this.state.othersymptom} 
                                     onChange={(e)=>{this.setState({othersymptom:e.target.value})}}
                                 >
                                 </textarea>
+                            </div>
                                 <section className="painslider" >
                                     <label>Rate level of pain (1 - 5)</label>
                                 </section>
@@ -89,7 +92,7 @@ export class UserPage extends Component {
                                 className="slider" id="myPainRange" 
                             />
                         </div>
-                            <button type="submit">Submit</button>
+                            <button className="btn waves-effect waves-light"type="submit">Submit</button>
                         </div>
                         </form>
                 </section>

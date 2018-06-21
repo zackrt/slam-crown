@@ -30,7 +30,16 @@
     display:block;
     margin:2px;
 }
-
+.record-day {
+    margin-bottom: 100px;
+}
+.btn {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    height: 30px;
+    width: 50%;
+    font-size: 1em;
+}
 .slider {
     -webkit-appearance: none;
     width: 70%;
