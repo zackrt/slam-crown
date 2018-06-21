@@ -4,6 +4,7 @@
     color:rgb(12, 12, 157);
     background-color: white;
     width: 80%;
+    padding:10px 0 10px 10px;
 }
 .log-out {
     margin-top: 10px;
@@ -12,5 +13,10 @@
     height: 30px;
     width: 50%;
     font-size: 1em;
+    background-color:rgb(67, 235, 67);
     box-shadow: 2px 2px 2px;
+}
+.logout-instruct {
+   padding:0 25px;
+   margin-left:15%;
 }

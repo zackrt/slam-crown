@@ -41,13 +41,13 @@ handleClick = () => {
         </h2>
           <section>
              <ul className="daily-report-ul">
-               Past symptoms reported:
+               Symptoms reported:
              <li><h3>{this.state.selectedSymptoms}</h3></li>
              <h3>{this.state.othersymptom}</h3>
-             <h3>{this.state.painLevel}</h3>
+             <h3>pain: {this.state.painLevel}</h3>
              </ul>
           </section>
-          <section>Come back tomorrow, we hope you have a speedy recovery!</section>
+          <section className="logout-instruct">Come back tomorrow! We hope you have a speedy recovery!</section>
           <button className="log-out" onClick={this.handleClick} type="button">Log Out</button>
       </div>
     )
