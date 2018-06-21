@@ -1,6 +1,16 @@
 .daily-report-ul {
     margin-left: auto;
     margin-right: auto;
-    color:white;
-    background-color: red;
+    color:rgb(12, 12, 157);
+    background-color: white;
+    width: 80%;
+}
+.log-out {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin: 10px 20%;
+    height: 30px;
+    width: 50%;
+    font-size: 1em;
+    box-shadow: 2px 2px 2px;
 }

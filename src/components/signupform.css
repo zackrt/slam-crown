@@ -27,6 +27,7 @@ input {
     height: 30px;
     width: 100%;
     font-size: 1em;
+    box-shadow: 2px 2px 2px;
 }
 input[type=submit] {
     margin:10px 10%;

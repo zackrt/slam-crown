@@ -35,10 +35,14 @@
 }
 .btn {
     margin-top: 10px;
+    margin-left:auto;
+    margin-right:auto;
     margin-bottom: 50px;
     height: 30px;
-    width: 50%;
+    width: 40%;
     font-size: 1em;
+    box-shadow: 2px 2px 2px;
+    background-color: rgb(47, 255, 75)
 }
 .slider {
     -webkit-appearance: none;

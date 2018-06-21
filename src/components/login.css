@@ -7,3 +7,6 @@ body {
     color:white;
     background: linear-gradient(to top right, #2E3192 , #1BFFFF);
   }
+  input {
+    box-shadow: 2px 2px 2px;
+  }

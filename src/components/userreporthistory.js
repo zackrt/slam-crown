@@ -48,7 +48,7 @@ handleClick = () => {
              </ul>
           </section>
           <section>Come back tomorrow, we hope you have a speedy recovery!</section>
-          <button onClick={this.handleClick} type="button">Log Out</button>
+          <button className="log-out" onClick={this.handleClick} type="button">Log Out</button>
       </div>
     )
   }

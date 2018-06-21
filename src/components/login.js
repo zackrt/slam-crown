@@ -34,7 +34,7 @@ export class Login extends Component {
     return (
       <div>
           <h1>
-            Login to Slam Crown
+            Login
           </h1>
             <form onSubmit={this.handleSubmit}>
               <fieldset>

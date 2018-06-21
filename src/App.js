@@ -15,7 +15,7 @@ export default function App(props) {
             <div className="app">
                     <Navigationbar />  
                         <header>
-                        <h1 className="link-title">
+                        <h1>
                         <Link className="link-title" to="/">Welcome to Slam Crown</Link>
                         </h1>
                          </header>
