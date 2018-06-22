@@ -5,7 +5,7 @@ export class LandingPage extends Component {
   render() {
     return (
       <div>
-        <h1>A simple and easy Concussion & Traumatic Brain Injury reporting app</h1>
+        <h1>A simple Concussion & Traumatic Brain Injury reporting app</h1>
         <a className="signuplink" href="/sign-up">Sign Up now!</a>
           <h2>What does Slam Crown do?</h2>
           <section className ="description">
