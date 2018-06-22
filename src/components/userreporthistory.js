@@ -12,8 +12,13 @@ export class UserReportHistory extends Component {
 };
 handleClick = () => {
   this.props.history.push('/login');
-  }
-
+}
+highPainAlert = () => {
+      console.log('PAIN LEVEL',this.state.painLevel);
+      if (this.state.painLevel >= 4) {
+       alert("Contact a Medical Professional");
+     }
+}
   componentDidMount = () => {
     const token = localStorage.getItem('token');
     axios.get(`${API_URL}/api/userpage`, {
@@ -25,15 +30,23 @@ handleClick = () => {
         this.setState({
           painLevel : response.data.painLevel,
           othersymptom : response.data.othersymptom,
-          selectedSymptoms : response.data.selectedSymptoms
+          selectedSymptoms : response.data.selectedSymptoms,
+          dateOfConcussion:response.data.dateOfConcussion
       })
+        this.highPainAlert();
         console.log(response, 'res in userreporthistory')
       })
       .catch(error => {
          console.log('error!');
       })
   }
+
   render() {
+    //console.log("DATE OF C",typeof this.state.dateOfConcussion,this.state.dateOfConcussion)
+    let concussionTimeStamp = Number(new Date(this.state.dateOfConcussion))/ 1000 
+    let todayTimeStamp = Number(new Date())/ 1000
+    let daysSince = (todayTimeStamp - concussionTimeStamp) / 86400
+    
     return (
       <div>
         <h2>
@@ -45,6 +58,7 @@ handleClick = () => {
              <li><h3>{this.state.selectedSymptoms}</h3></li>
              <h3>{this.state.othersymptom}</h3>
              <h3>pain: {this.state.painLevel}</h3>
+             <p>Last concussion:  {Math.round(daysSince)} days ago</p>
              </ul>
           </section>
           <section className="logout-instruct">Come back tomorrow! We hope you have a speedy recovery!</section>
