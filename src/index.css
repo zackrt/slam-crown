@@ -7,6 +7,9 @@ body {
   color:white;
   background-color: black;
 }
+.hiddenElement {
+  display : none;
+}
 
   /*background: linear-gradient(to top right, #2E3192 , #1BFFFF);*/
 

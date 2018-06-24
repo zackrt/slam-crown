@@ -8,7 +8,7 @@ import Login from './components/Login';
 import UserPage from './components/UserPage';
 import UserReportHistory from './components/UserReportHistory';
 import Navigationbar from './components/NavigationBar';
-
+//Hide <Link> in Userpage.js and Userreporthistory.js 
 export default function App(props) {
     return (
         <Router>
@@ -16,7 +16,7 @@ export default function App(props) {
                     <Navigationbar />  
                         <header>
                         <h1>
-                        <Link className="link-title" to="/">Welcome to Slam Crown</Link>
+                        <Link id="welcome-link"className="link-title" to="/">Welcome to Slam Crown</Link>
                         </h1>
                          </header>
                             <main>
@@ -26,7 +26,8 @@ export default function App(props) {
                                 <Route exact path="/userpage" component={UserPage} />
                                 <Route exact path="/userreporthistory" component={UserReportHistory} />
                             </main>
-                <script type="text/javascript" src="js/materialize.min.js"></script>
+ 
+               
             </div>
         </Router>
     );
