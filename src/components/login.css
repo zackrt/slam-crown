@@ -5,7 +5,8 @@ body {
     height: 100%;
     width: 100%;
     color:white;
-    background: linear-gradient(to top right, #2E3192 , #1BFFFF);
+    /*background: linear-gradient(to top right, #2E3192 , #1BFFFF);*/
+    background-color: black;
   }
   input {
     box-shadow: 2px 2px 2px;

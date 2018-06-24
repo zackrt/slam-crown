@@ -42,7 +42,7 @@ export class Login extends Component {
                   <span>Email: </span>
                   <input 
                     type="text" 
-                    placeholder="demo@slamcrown.com" 
+                    placeholder="demo" 
                     id="email-address" 
                     onInput={e => this.updateModel('email',e)} 
                     required 
