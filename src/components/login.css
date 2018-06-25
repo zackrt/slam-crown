@@ -4,9 +4,9 @@ body {
     font-family: sans-serif;
     height: 100%;
     width: 100%;
-    color:white;
+    color:rgb(26, 24, 24);
     /*background: linear-gradient(to top right, #2E3192 , #1BFFFF);*/
-    background-color: black;
+    background-color: white;
   }
   input {
     box-shadow: 2px 2px 2px;

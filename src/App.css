@@ -24,3 +24,6 @@
 .hiddenElement {
   display : none;
 }
+.legend {
+  color: rgb(0, 4, 255);
+}

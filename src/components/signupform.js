@@ -40,39 +40,44 @@ export class SignUp extends Component {
         </h2>
             <form onSubmit={this.handleSubmit}>
                 <fieldset>
-                    <legend>Sign Up:</legend>
-                        <span>Email:</span>
-                        <input
-                            type="text" 
-                            placeholder="demo@slamcrown.com" 
-                            onInput={e => this.updateModel('email',e)} 
-                            required 
-                        />
-                        <br />
-                        <div className="input-field col s6">
-                        <input placeholder="Demo" id="first_name" type="text" class="validate"/>
-                        <label htmlFor="email_address">Email Address</label>
-                        </div>
-                        <span>Password:</span>
+                    <legend className="legend">Sign Up:</legend>
+                        <br />        
+                        <div className="input-field col s12">
                         <input 
-                            type="password" 
+                            placeholder="demo" 
+                            id="first_name" 
+                            type="email"  
+                            className="validate" 
+                            onInput={e => this.updateModel('email',e)} 
+                            required
+                        />
+                        <label htmlFor="email_address">Email Address</label>
+                    </div>
+                        <div className="input-field col s12">
+                        <input 
+                            type="password"
+                            id="password" 
                             placeholder="password" 
                             onInput={e => this.updateModel('password',e)} 
                             required 
                         />
+                        <label htmlFor="password">Password</label>
+                    </div>
                         <br />
-                        <span>Date of Concussion:</span>
+                        <div className="input-field col s12">
                         <input 
                             type="date"  
                             onInput={e => this.updateModel('dateOfConcussion',e)}
                         />
+                        <label htmlFor="date-of-concussion">Date of Concussion:</label>
+                        </div>
                     </fieldset>
-                    <button className="submitbtn btn waves-effect waves-light" type="submit" name="action">Submit!
+                    <button className="submitbtn btn waves-effect waves-light pulse" type="submit" name="action">Submit!
+                        <i className="material-icons right">send</i>
                     </button>
             </form>
       </div>
     )
   }
 }
-
 export default SignUp

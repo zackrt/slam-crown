@@ -1,5 +1,4 @@
 nav {
-    position: sticky;
 }
 .NavBar {
     list-style-type: none;
@@ -8,7 +7,6 @@ nav {
     overflow: scroll;
     color:black;
     background-color: inherit;
-    position: sticky;
 }
 .NavBar li a, .dropbtn {
     display: inline-block;

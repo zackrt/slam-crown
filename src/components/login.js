@@ -41,23 +41,28 @@ export class Login extends Component {
             <form onSubmit={this.handleSubmit}>
               <fieldset>
                 <legend>Login:</legend>
-                  <span>Email: </span>
-                  <input 
-                    type="text" 
-                    placeholder="demo" 
-                    id="email-address" 
-                    onInput={e => this.updateModel('email',e)} 
-                    required 
-                    />
+                <div className="input-field col s12">
+                        <input 
+                            placeholder="demo" 
+                            id="email-address"
+                            type="text"  
+                            className="validate" 
+                            onInput={e => this.updateModel('email',e)} 
+                            required
+                        />
+                        <label htmlFor="email_address">Email Address:</label>
+                    </div>
                   <br/>
-                  <span>Password: </span>
-                  <input 
-                    type="password" 
-                    placeholder="password" 
-                    id="user-password" 
-                    onInput={e => this.updateModel('password',e)}
-                    required 
-                  />
+                  <div className="input-field col s12">
+                        <input 
+                            type="password"
+                            id="user-password" 
+                            placeholder="password" 
+                            onInput={e => this.updateModel('password',e)} 
+                            required 
+                        />
+                        <label htmlFor="password">Password</label>
+                    </div>
                   <br/>  
               </fieldset>
                 <button class="btn waves-effect waves-light pulse" type="submit" name="action">Login!
