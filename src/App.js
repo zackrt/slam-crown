@@ -26,8 +26,6 @@ export default function App(props) {
                                 <Route exact path="/userpage" component={UserPage} />
                                 <Route exact path="/userreporthistory" component={UserReportHistory} />
                             </main>
- 
-               
             </div>
         </Router>
     );

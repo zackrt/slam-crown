@@ -11,3 +11,19 @@ body {
   input {
     box-shadow: 2px 2px 2px;
   }
+  .submitbtn {
+    height: 30px;
+    width: 100%;
+    font-size: 1em;
+    box-shadow: 2px 2px 2px;
+}
+button[type=submit] {
+    margin:10px 10%;
+    padding: 5px 15px; 
+    background:rgb(49, 233, 33); 
+    border:1 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    width: 80%;
+}

@@ -23,13 +23,13 @@ span {
     display: block;
     margin: 5px 0 5px 0;
 }
-input {
+.submitbtn {
     height: 30px;
     width: 100%;
     font-size: 1em;
     box-shadow: 2px 2px 2px;
 }
-input[type=submit] {
+button[type=submit] {
     margin:10px 10%;
     padding: 5px 15px; 
     background:rgb(49, 233, 33); 

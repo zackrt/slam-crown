@@ -49,6 +49,10 @@ export class SignUp extends Component {
                             required 
                         />
                         <br />
+                        <div className="input-field col s6">
+                        <input placeholder="Demo" id="first_name" type="text" class="validate"/>
+                        <label htmlFor="email_address">Email Address</label>
+                        </div>
                         <span>Password:</span>
                         <input 
                             type="password" 
@@ -63,7 +67,8 @@ export class SignUp extends Component {
                             onInput={e => this.updateModel('dateOfConcussion',e)}
                         />
                     </fieldset>
-                    <input className="submitbtn" type="submit" value="Submit!" />
+                    <button className="submitbtn btn waves-effect waves-light" type="submit" name="action">Submit!
+                    </button>
             </form>
       </div>
     )

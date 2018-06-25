@@ -60,7 +60,8 @@ export class Login extends Component {
                   />
                   <br/>  
               </fieldset>
-                <input type="submit" value="Login!" />
+                <button class="btn waves-effect waves-light pulse" type="submit" name="action">Login!
+                </button>
             </form>
         </div>
     )

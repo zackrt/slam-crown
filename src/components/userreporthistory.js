@@ -62,7 +62,7 @@ highPainAlert = () => {
              </ul>
           </section>
           <section className="logout-instruct">Come back tomorrow! We hope you have a speedy recovery!</section>
-          <button className="log-out" onClick={this.handleClick} type="button">Log Out</button>
+          <button className="log-out btn waves-effect waves-light" onClick={this.handleClick} type="button" name="action">Log Out</button>
       </div>
     )
   }
