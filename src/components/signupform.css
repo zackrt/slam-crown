@@ -49,7 +49,7 @@ input[type=submit]:hover {
     margin:0 20%;
 }
 .input-labels {
-    color: white;
+    color: #ffffff;
 }
 
 @media ( min-width: 648px) {
