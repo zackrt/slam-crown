@@ -48,11 +48,11 @@ input[type=submit]:hover {
     position: absolute;
     margin:0 20%;
 }
+.input-labels {
+    color: white;
+}
 
 @media ( min-width: 648px) {
-    div {
-        
-    }
     span {
         display: block;
     }

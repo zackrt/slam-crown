@@ -51,7 +51,7 @@ export class SignUp extends Component {
                             onInput={e => this.updateModel('email',e)} 
                             required
                         />
-                        <label htmlFor="email_address">Email Address</label>
+                        <label className="input-labels" htmlFor="email_address">Email Address</label>
                     </div>
                         <div className="input-field col s12">
                         <input 
@@ -61,7 +61,7 @@ export class SignUp extends Component {
                             onInput={e => this.updateModel('password',e)} 
                             required 
                         />
-                        <label htmlFor="password">Password</label>
+                        <label className="input-labels" htmlFor="password">Password</label>
                     </div>
                         <br />
                         <div className="input-field col s12">
@@ -69,7 +69,7 @@ export class SignUp extends Component {
                             type="date"  
                             onInput={e => this.updateModel('dateOfConcussion',e)}
                         />
-                        <label htmlFor="date-of-concussion">Date of Concussion:</label>
+                        <label className="input-labels" htmlFor="date-of-concussion">Date of Concussion:</label>
                         </div>
                     </fieldset>
                     <button className="submitbtn btn waves-effect waves-light pulse" type="submit" name="action">Submit!
