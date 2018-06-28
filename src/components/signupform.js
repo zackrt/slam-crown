@@ -75,6 +75,8 @@ export class SignUp extends Component {
                     <button className="submitbtn btn waves-effect waves-light pulse" type="submit" name="action">Submit!
                         <i className="material-icons right">send</i>
                     </button>
+                    <br />
+                    <a href="/login">Login Here</a>
             </form>
       </div>
     )

@@ -68,12 +68,12 @@ export class UserPage extends Component {
                         <form className="record-day"id="record-day" onSubmit={this.handleSubmit}>
                         <div className="form-section">
                         <div className="input-field col s12">
-                                <label  htmlFor="textarea1 other-symptom-summary"className="text-area-label" >(old)Other symptoms:</label>
+                                <label  htmlFor="textarea1 other-symptom-summary" className="text-area-label" >Other symptoms:</label>
                                 <textarea 
                                     id="textarea1" 
                                     className="other-symptom-summary materialize-textarea"
                                     rows="10" 
-                                    placeholder="Irritability, confusion, lack of coordination, memory loss, vomiting, dizziness, ringing in the ears, and/or sleepiness"
+                                    placeholder="Irritability, confusion, lack of coordination, memory loss, etc"
                                     value={this.state.othersymptom} 
                                     onChange={(e)=>{this.setState({othersymptom:e.target.value})}}
                                 >
