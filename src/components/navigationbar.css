@@ -57,3 +57,10 @@ nav {
     display: block
     !important;
 }
+.login-link-nav a {
+    border:1px red dotted;
+    display:inline-block;
+    color:white;
+    text-align: right;
+    font-size: 30px;
+}

@@ -27,3 +27,7 @@ button[type=submit] {
     border-radius: 5px; 
     width: 80%;
 }
+.label-email-address, .label-password {
+  color:white !important;
+  font-size: 26px !important;
+}

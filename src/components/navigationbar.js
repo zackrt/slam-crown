@@ -16,6 +16,9 @@ export class NavigationBar extends Component {
                         <a href="/login">Sign Out</a>
                       </div>
                     </div>
+                      <div className="login-link">
+                      <a className="login-link-nav" href="/login">Login/Sign In</a>
+                      </div>
             </nav>    
       </div>
     )

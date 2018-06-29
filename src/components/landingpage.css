@@ -74,8 +74,9 @@ img {
 border-radius: 50%;
 }
 .signuplink {
+    font-size: 28px;
     display: block;
-    margin: 4%;
+    margin: 5%;
     color: rgb(254, 254, 119);
 }
 .description {

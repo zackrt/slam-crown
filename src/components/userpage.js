@@ -80,7 +80,7 @@ export class UserPage extends Component {
                                 </textarea>
                             </div>
                                 <section className="painslider" >
-                                    <label>Rate level of pain (1 - 5)</label>
+                                    <label className="label-rate-pain">Rate level of pain (1 - 5)</label>
                                 </section>
                         <div className="slidecontainer">
                             <input 

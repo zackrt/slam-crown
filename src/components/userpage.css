@@ -85,8 +85,17 @@
     margin: 20px;
     border-radius: 5%;
 }
+.text-area-label {
+    font-size: 20px;
+    color:white !important;
+}
 .other-symptom-summary {
     font-size: .8em;
+    width: 80% !important;
+}
+.label-rate-pain {
+    font-size: 1em;
+    color:white !important;
 }
 @media ( min-width: 648px) {
     .symptomselector {

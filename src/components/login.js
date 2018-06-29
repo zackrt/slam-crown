@@ -50,7 +50,7 @@ export class Login extends Component {
                             onInput={e => this.updateModel('email',e)} 
                             required
                         />
-                        <label htmlFor="email_address">Email Address:</label>
+                        <label className="label-email-address" htmlFor="email_address">Email Address:</label>
                     </div>
                   <br/>
                   <div className="input-field col s12">
@@ -61,7 +61,7 @@ export class Login extends Component {
                             onInput={e => this.updateModel('password',e)} 
                             required 
                         />
-                        <label htmlFor="password">Password</label>
+                        <label className="label-password" htmlFor="password">Password</label>
                     </div>
                   <br/>  
               </fieldset>
