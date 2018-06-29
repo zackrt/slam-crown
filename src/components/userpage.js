@@ -4,6 +4,7 @@ import SymptomSelector from './SymptomSelector';
 import './UserPage.css';
 import axios from 'axios';
 import {API_URL} from '../config';
+// if no selection is made, error in .join
 export class UserPage extends Component {
     state = {
         painLevel: 3,

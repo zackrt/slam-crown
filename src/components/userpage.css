@@ -26,10 +26,6 @@
     display: block;
     margin:5px 60px 5px; 
 }
-.text-area-label {
-    display:block;
-    margin:2px;
-}
 .record-day {
     margin-bottom: 100px;
 }
@@ -87,11 +83,13 @@
 }
 .text-area-label {
     font-size: 20px;
+    display:block;
+    margin:2px;
     color:white !important;
 }
 .other-symptom-summary {
     font-size: .8em;
-    width: 80% !important;
+    width: 70% !important;
 }
 .label-rate-pain {
     font-size: 1em;
