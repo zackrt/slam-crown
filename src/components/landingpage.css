@@ -93,3 +93,9 @@ border-radius: 50%;
         margin: 20px;
     }
 }
+.loginlink {
+    font-size: 28px;
+    display: block;
+    margin-left: 5%;
+    color: rgb(254, 254, 119);
+}
