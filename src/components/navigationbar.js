@@ -9,7 +9,7 @@ export class NavigationBar extends Component {
       <div>
         <nav className="NavBar">
           <Dropdown trigger={
-            <Button>Menu</Button>
+            <Button className="dropdown-btn">Menu</Button>
             }>
               <NavItem href="/login">Login</NavItem>
               <NavItem href="/sign-up">Sign Up</NavItem>
@@ -17,7 +17,7 @@ export class NavigationBar extends Component {
               <NavItem href="https://github.com/zackrt/slam-crown">Github</NavItem>
               <NavItem href="/login">Sign Out</NavItem>
           </Dropdown>
-        </nav>    
+        </nav>     
       </div>
     )
   }

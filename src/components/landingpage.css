@@ -75,7 +75,7 @@ border-radius: 50%;
 }
 .signuplink {
     font-size: 28px;
-    display: block;
+    display: inline;
     margin: 5%;
     color: rgb(254, 254, 119);
 }
@@ -95,7 +95,7 @@ border-radius: 50%;
 }
 .loginlink {
     font-size: 28px;
-    display: block;
+    display: inline;
     margin-left: 5%;
     color: rgb(254, 254, 119);
 }

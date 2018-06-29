@@ -17,7 +17,7 @@ body {
     font-size: 1em;
     box-shadow: 2px 2px 2px;
 }
-button[type=submit] {
+/*button[type=submit] {
     margin:10px 10%;
     padding: 5px 15px; 
     background:rgb(49, 233, 33); 
@@ -25,9 +25,9 @@ button[type=submit] {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 5px; 
-    width: 80%;
-}
-.label-email-address, .label-password {
-  color:white !important;
-  font-size: 26px !important;
+    width: 60%;
+}*/
+.login-btn {
+  width:60% !important;
+  line-height: normal !important;
 }

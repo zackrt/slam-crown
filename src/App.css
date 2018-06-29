@@ -25,10 +25,13 @@
   display : none;
 }
 .legend {
-  color: rgb(0, 4, 255);
+  color: rgb(255, 255, 255);
 }
 .link-title {
   color:white;
+}
+.nav {
+  background-color: inherit !important;
 }
 @media (min-width: 1400px) {
   

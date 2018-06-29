@@ -4,6 +4,7 @@ import SymptomSelector from './SymptomSelector';
 import './UserPage.css';
 import axios from 'axios';
 import {API_URL} from '../config';
+import {Input, Row} from 'react-materialize';
 // if no selection is made, error in .join
 export class UserPage extends Component {
     state = {
@@ -70,6 +71,9 @@ export class UserPage extends Component {
                         <div className="form-section">
                         <div className="input-field col s12">
                                 <label  htmlFor="textarea1 other-symptom-summary" className="text-area-label" >Other symptoms:</label>
+                                <Row>
+                                    <Input type='textarea' />
+                                </Row>
                                 <textarea 
                                     id="textarea1" 
                                     className="other-symptom-summary materialize-textarea"

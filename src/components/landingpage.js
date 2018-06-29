@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Button} from 'react-materialize';
 
 import './LandingPage.css';
 export class LandingPage extends Component {
@@ -6,8 +7,9 @@ export class LandingPage extends Component {
     return (
       <div>
         <h1>A simple Concussion & Traumatic Brain Injury reporting app</h1>
-        <a className="signuplink" href="/sign-up">Sign Up now!</a>
-        <br />
+        <div>
+        <Button waves='light' className="signuplink" node='a' href='/sign-up'>Sign Up Now!</Button>
+        </div>
         <a className="loginlink" href="/login">Log In & Sign In!</a>
           <h2>What does Slam Crown do?</h2>
           <section className ="description">

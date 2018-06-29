@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import './SignupForm.css';
 import {API_URL} from '../config';
+import {Row, Input} from 'react-materialize';
 export class SignUp extends Component {
     state = {
         email: "",
@@ -64,13 +65,9 @@ export class SignUp extends Component {
                         <label className="input-labels" htmlFor="password">Password</label>
                     </div>
                         <br />
-                        <div className="input-field col s12">
-                        <input 
-                            type="date"  
-                            onInput={e => this.updateModel('dateOfConcussion',e)}
-                        />
-                        <label className="input-labels" htmlFor="date-of-concussion">Date of Concussion:</label>
-                        </div>
+                        <Row>
+                            <Input name='on' type='date' onInput={e => this.updateModel('dateOfConcussion',e)} labelClassName="Date of Concussion:"/>date of Concussion:
+                        </Row>
                     </fieldset>
                     <button className="submitbtn btn waves-effect waves-light pulse" type="submit" name="action">Submit!
                         <i className="material-icons right">send</i>

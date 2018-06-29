@@ -3,6 +3,7 @@ import axios from 'axios';
 import './Login.css';
 import {withRouter} from 'react-router-dom';
 import {API_URL} from '../config';
+import {Input, Row} from 'react-materialize';
 export class Login extends Component {
   state = {
     email: "",
@@ -40,32 +41,28 @@ export class Login extends Component {
           </h1>
             <form onSubmit={this.handleSubmit}>
               <fieldset>
-                <legend>Login:</legend>
-                <div className="input-field col s12">
-                        <input 
-                            placeholder="demo" 
-                            id="email-address"
-                            type="text"  
-                            className="validate" 
-                            onInput={e => this.updateModel('email',e)} 
-                            required
-                        />
-                        <label className="label-email-address" htmlFor="email_address">Email Address:</label>
-                    </div>
-                  <br/>
-                  <div className="input-field col s12">
-                        <input 
-                            type="password"
-                            id="user-password" 
-                            placeholder="password" 
-                            onInput={e => this.updateModel('password',e)} 
-                            required 
-                        />
-                        <label className="label-password" htmlFor="password">Password</label>
-                    </div>
-                  <br/>  
+                <legend>Sign In:</legend>
+                  <Row>
+                    <Input type="email" 
+                      label="Email Address" 
+                      s={12} 
+                      placeholder="demo" 
+                      id="email-address"
+                      type="text"  
+                      className="validate" 
+                      onInput={e => this.updateModel('email',e)} 
+                      required
+                    />
+                    <Input type="password" 
+                      label="password" s={12} id="user-password" 
+                      placeholder="password"
+                      className="password" 
+                      onInput={e => this.updateModel('password',e)} 
+                      required 
+                    />
+                  </Row>  
               </fieldset>
-                <button className="btn waves-effect waves-light pulse" type="submit" name="action">Login!
+                <button className="login-btn btn waves-effect waves-light pulse" type="submit" name="action">Login!
                 </button>
             </form>
         </div>
