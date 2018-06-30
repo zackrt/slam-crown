@@ -58,27 +58,32 @@ export class UserPage extends Component {
     return (
       <div>
             <h1>
-        Welcome back, User {this.state.emailAddress}
+                Welcome back, User {this.state.emailAddress}
             </h1>
                 <h2>
                     Today's Report
                 </h2>
                         <SymptomSelector 
                             onUpdate = {(selectedSymptoms) => 
-                                this.setState({selectedSymptoms})}
+                            this.setState({selectedSymptoms})}
                         /> 
                 <section className="reportform">           
-                        <form className="record-day"id="record-day" onSubmit={this.handleSubmit}>
+                        <form className="record-day"id="record-day" onSubmit=       {this.handleSubmit}>
                         <div className="form-section">
                         <div className="input-field col s12">
-                                <label  htmlFor="textarea1 other-symptom-summary" className="text-area-label" >Other symptoms:</label>
+                                <label  
+                                htmlFor="textarea1 other-symptom-summary" className="text-area-label">Other symptoms:
+                                </label>
                                 <Row>
-                                    <Input type='textarea' id="textarea1" 
+                                    <Input type='textarea' 
+                                    id="textarea1" 
                                     className="other-symptom-summary materialize-textarea"
                                     rows="1" 
                                     placeholder="Irritability, confusion, lack of coordination, memory loss, etc"
                                     value={this.state.othersymptom} 
                                     onChange={(e)=>{this.setState({othersymptom:e.target.value})}}
+                                    aria-label="other symptoms"
+                                    aria-required="true" 
                                     />
                                 </Row>
                             </div>

@@ -78,7 +78,10 @@ export class SignUp extends Component {
                             name='on' 
                             type='date' 
                             onChange={e => this.updateModel('dateOfConcussion',e)} 
-                            labelClassName="date-picker-label"/>
+                            labelClassName="date-picker-label"
+                            aria-label="date of concussion"
+                            aria-required="true" 
+                        />
                         </Row>
                 </fieldset>
                     <button className="submitbtn btn waves-effect waves-light pulse" type="submit" name="action">Submit!
