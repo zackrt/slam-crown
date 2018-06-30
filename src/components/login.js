@@ -49,7 +49,9 @@ export class Login extends Component {
                       placeholder="demo" 
                       id="email-address"  
                       className="validate" 
-                      onInput={e => this.updateModel('email',e)} 
+                      onInput={e => this.updateModel('email',e)}
+                      aria-label="email address"
+                      aria-required="true"  
                       required
                     />
                     <Input type="password" 
@@ -57,7 +59,9 @@ export class Login extends Component {
                       placeholder="password"
                       className="password" 
                       onInput={e => this.updateModel('password',e)} 
-                      required 
+                      required
+                      aria-label="password"
+                      aria-required="true"  
                     />
                   </Row>  
               </fieldset>
