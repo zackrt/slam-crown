@@ -46,7 +46,7 @@ export class Login extends Component {
                     <Input type="email" 
                       label="Email Address" 
                       s={12} 
-                      placeholder="demo" 
+                      placeholder="demo@slamcrown.com" 
                       id="email-address"  
                       className="validate email-input" 
                       onInput={e => this.updateModel('email',e)}
