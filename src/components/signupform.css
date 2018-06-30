@@ -30,7 +30,7 @@ span {
     box-shadow: 2px 2px 2px;
 }
 button[type=submit] {
-    margin:10px 10%;
+    margin:25px 20%;
     margin-bottom:60px !important;
     /*padding:10px 5px 5px 15px;*/
     background:rgb(49, 233, 33); 
