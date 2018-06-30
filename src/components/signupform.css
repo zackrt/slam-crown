@@ -31,7 +31,8 @@ span {
 }
 button[type=submit] {
     margin:10px 10%;
-    padding:10px 5px 5px 15px;
+    margin-bottom:60px !important;
+    /*padding:10px 5px 5px 15px;*/
     background:rgb(49, 233, 33); 
     border:1 none;
     cursor:pointer;

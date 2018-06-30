@@ -84,16 +84,21 @@
 .text-area-label {
     font-size: 20px;
     display:block;
-    margin:2px;
+    margin-bottom:15px;
+    padding:1px;
     color:white !important;
 }
 .other-symptom-summary {
+    margin-top: 10px !important;
     font-size: .8em;
     width: 70% !important;
 }
 .label-rate-pain {
     font-size: 1em;
     color:white !important;
+}
+.input-field {
+    width:100% !important;
 }
 @media ( min-width: 648px) {
     .symptomselector {

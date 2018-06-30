@@ -72,17 +72,14 @@ export class UserPage extends Component {
                         <div className="input-field col s12">
                                 <label  htmlFor="textarea1 other-symptom-summary" className="text-area-label" >Other symptoms:</label>
                                 <Row>
-                                    <Input type='textarea' />
-                                </Row>
-                                <textarea 
-                                    id="textarea1" 
+                                    <Input type='textarea' id="textarea1" 
                                     className="other-symptom-summary materialize-textarea"
-                                    rows="10" 
+                                    rows="1" 
                                     placeholder="Irritability, confusion, lack of coordination, memory loss, etc"
                                     value={this.state.othersymptom} 
                                     onChange={(e)=>{this.setState({othersymptom:e.target.value})}}
-                                >
-                                </textarea>
+                                    />
+                                </Row>
                             </div>
                                 <section className="painslider" >
                                     <label className="label-rate-pain">Rate level of pain (1 - 5)</label>
