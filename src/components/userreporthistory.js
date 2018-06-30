@@ -54,11 +54,13 @@ highPainAlert = () => {
         </h2>
           <section>
              <ul className="daily-report-ul">
+              <div className="report-container"> 
                Symptoms reported:
              <li><h3>{this.state.selectedSymptoms}</h3></li>
              <h3>{this.state.othersymptom}</h3>
              <h3>pain: {this.state.painLevel}</h3>
              <p>Last concussion:  {Math.round(daysSince)} days ago</p>
+              </div>
              </ul>
           </section>
           <section className="logout-instruct">Come back tomorrow! We hope you have a speedy recovery!</section>
