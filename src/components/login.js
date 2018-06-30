@@ -47,8 +47,7 @@ export class Login extends Component {
                       label="Email Address" 
                       s={12} 
                       placeholder="demo" 
-                      id="email-address"
-                      type="text"  
+                      id="email-address"  
                       className="validate" 
                       onInput={e => this.updateModel('email',e)} 
                       required

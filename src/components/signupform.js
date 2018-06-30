@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 //import { withRouter } from 'react-router-dom'
+//have them match the password, persist both passwords into the state.
 import axios from 'axios';
 import './SignupForm.css';
 import {API_URL} from '../config';
@@ -18,7 +19,11 @@ export class SignUp extends Component {
             emailAddress:this.state.email,
             password:this.state.password,
             dateOfConcussion:this.state.dateOfConcussion
-        }).then(response => console.log(response));
+        }).then(response =>{ 
+            console.log(response);
+            this.props.history.push('/login');
+            //alert(`Account ${this.state.email} Created`);
+        })
         //console.log(this.state);
     }  
     updateModel = (key, e) => {
@@ -28,7 +33,8 @@ export class SignUp extends Component {
 // this.props.history.push('api/auth')
 // SomeComponent
 // export default withRouter(SomeComponent)
-    
+  //add date of concussion in props to render/display v
+  //
   render() {
     console.log(this.state);
     return (
@@ -43,37 +49,42 @@ export class SignUp extends Component {
                 <fieldset>
                     <legend className="legend">Sign Up:</legend>
                         <br />        
-                        <div className="input-field col s12">
-                        <input 
-                            placeholder="demo" 
-                            id="first_name" 
-                            type="email"  
-                            className="validate" 
-                            onInput={e => this.updateModel('email',e)} 
-                            required
-                        />
-                        <label className="input-labels" htmlFor="email_address">Email Address</label>
-                    </div>
-                        <div className="input-field col s12">
-                        <input 
-                            type="password"
+                    <Row>
+                    <Input type="email" 
+                        label="Email Address" 
+                        s={12} 
+                        placeholder="demo" 
+                        id="email-address" 
+                        className="validate email-input-label" 
+                        onInput={e => this.updateModel('email',e)}
+                        aria-label="email address"
+                        aria-required="true" 
+                        required
+                    />
+                        <Input type="password" 
+                            label="password" s={12}  
                             id="password" 
                             placeholder="password" 
-                            onInput={e => this.updateModel('password',e)} 
+                            onInput={e => this.updateModel('password',e)}
+                            aria-label="password"
+                            aria-required="true"  
                             required 
                         />
-                        <label className="input-labels" htmlFor="password">Password</label>
-                    </div>
+                    </Row>
                         <br />
                         <Row>
-                            <Input name='on' type='date' onInput={e => this.updateModel('dateOfConcussion',e)} labelClassName="Date of Concussion:"/>date of Concussion:
+                        <label className="date-picker-label">date of Concussion:</label>
+                        <Input 
+                            name='on' 
+                            type='date' 
+                            onChange={e => this.updateModel('dateOfConcussion',e)} 
+                            labelClassName="date-picker-label"/>
                         </Row>
-                    </fieldset>
+                </fieldset>
                     <button className="submitbtn btn waves-effect waves-light pulse" type="submit" name="action">Submit!
                         <i className="material-icons right">send</i>
                     </button>
                     <br />
-                    <a href="/login">Login Here</a>
             </form>
       </div>
     )

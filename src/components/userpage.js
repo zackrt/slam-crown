@@ -9,7 +9,8 @@ import {Input, Row} from 'react-materialize';
 export class UserPage extends Component {
     state = {
         painLevel: 3,
-        othersymptom:""
+        othersymptom:"",
+        selectedSymptoms:[]
     };
     // checking auth
     componentDidMount = () => {

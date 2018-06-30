@@ -25,7 +25,7 @@ span {
 }
 .submitbtn {
     height: 30px;
-    width: 100%;
+    width: 60% !important;
     font-size: 1em;
     box-shadow: 2px 2px 2px;
 }
@@ -52,6 +52,9 @@ input[type=submit]:hover {
 .input-labels {
     color: #ffffff !important;
 }
+.email-input-label {
+    color:white !important;
+}
 
 @media ( min-width: 648px) {
     span {
@@ -59,7 +62,7 @@ input[type=submit]:hover {
     }
     form {
         display: inline;
-        text-align: center;
+        /*text-align: center;*/
         color: rgba(245, 245, 245, 0.897);
     }
     input {

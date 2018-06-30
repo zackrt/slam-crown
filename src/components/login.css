@@ -13,7 +13,7 @@ body {
   }
   .submitbtn {
     height: 30px;
-    width: 100%;
+    width: 60% !important;
     font-size: 1em;
     box-shadow: 2px 2px 2px;
 }
