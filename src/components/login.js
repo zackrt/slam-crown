@@ -48,7 +48,7 @@ export class Login extends Component {
                       s={12} 
                       placeholder="demo" 
                       id="email-address"  
-                      className="validate" 
+                      className="validate email-input" 
                       onInput={e => this.updateModel('email',e)}
                       aria-label="email address"
                       aria-required="true"  
