@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Dropdown, NavItem, Button} from 'react-materialize';
 //import {Link} from 'react-router-dom';
 import './NavigationBar.css';
-
+//Place GITHUB Link in footer!
 export class NavigationBar extends Component {
   render() {
     return (
