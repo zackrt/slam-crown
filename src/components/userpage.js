@@ -32,7 +32,12 @@ export class UserPage extends Component {
             this.setState({
                 emailAddress : response.data.emailAddress
             })
-            $(".nav-login-link").attr("hidden", "false")
+            let disabledLink = document.getElementById('navigation-login-link');
+            disabledLink.classList.add('hiddenElement');
+            let disabledSignupLink = document.getElementById('navigation-signup-link');
+            disabledSignupLink.classList.add('hiddenElement');
+            
+            //$(".nav-login-link").attr("hidden", "false")
         })
         .catch(error =>{
             console.log(error);

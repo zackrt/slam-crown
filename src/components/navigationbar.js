@@ -11,8 +11,8 @@ export class NavigationBar extends Component {
           <Dropdown trigger={
             <Button className="dropdown-btn">Menu</Button>
             }>
-              <NavItem className="nav-login-link" href="/login">Login</NavItem>
-              <NavItem className="nav-signup-link" href="/sign-up">Sign Up</NavItem>
+              <NavItem id="navigation-login-link" className="nav-login-link" href="/login">Login</NavItem>
+              <NavItem id="navigation-signup-link" className="nav-signup-link" href="/sign-up">Sign Up</NavItem>
               <NavItem divider />
               <NavItem href="/login">Sign Out</NavItem>
           </Dropdown>

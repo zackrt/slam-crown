@@ -14,11 +14,13 @@ export default function App(props) {
         <Router>
             <div className="app">
                     <Navigationbar />  
-                        <header>
-                        <h1>
-                        <Link id="welcome-link"className="link-title" to="/">Welcome to Slam Crown</Link>
-                        </h1>
-                         </header>
+                        <div className="link-title">
+                            <header>
+                                <h1>
+                                    <Link id="welcome-link" to="/">Welcome to Slam Crown</Link>
+                                </h1>
+                            </header>
+                        </div>
                             <main>
                                 <Route exact path="/" component={LandingPage} />
                                 <Route exact path="/sign-up" component={SignUp} />

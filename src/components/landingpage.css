@@ -43,7 +43,7 @@ img {
     margin-left: 5%;
     color: rgb(254, 254, 119);
 }
-@media ( min-width: 648px) {
+@media only and screen ( min-width: 648px) {
 
     input {
         width: 50%;
@@ -51,5 +51,20 @@ img {
     .instructions {
         width: 50%;
         margin: 20px;
+    }
+}
+/* change image and instruction to display block */
+@media only and screen (max-width: 600px) {
+    .brainimage {
+        display: block !important;
+        margin: auto;
+        width:100% !important;
+    }
+    .instructions {
+        display:block !important;
+        margin: auto;
+        padding: 10px;
+        border: 1px dotted red;
+        width:100% !important;
     }
 }
