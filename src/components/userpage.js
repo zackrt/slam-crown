@@ -5,6 +5,8 @@ import './UserPage.css';
 import axios from 'axios';
 import {API_URL} from '../config';
 import {Input, Row} from 'react-materialize';
+/*eslint-env jquery */
+
 // if no selection is made, error in .join
 export class UserPage extends Component {
     state = {
@@ -30,6 +32,7 @@ export class UserPage extends Component {
             this.setState({
                 emailAddress : response.data.emailAddress
             })
+            $(".nav-login-link").attr("hidden", "false")
         })
         .catch(error =>{
             console.log(error);

@@ -11,7 +11,7 @@ export class NavigationBar extends Component {
           <Dropdown trigger={
             <Button className="dropdown-btn">Menu</Button>
             }>
-              <NavItem href="/login">Login</NavItem>
+              <NavItem className="nav-login-link" href="/login">Login</NavItem>
               <NavItem href="/sign-up">Sign Up</NavItem>
               <NavItem divider />
               <NavItem href="https://github.com/zackrt/slam-crown">Github</NavItem>
