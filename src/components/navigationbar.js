@@ -14,7 +14,6 @@ export class NavigationBar extends Component {
               <NavItem className="nav-login-link" href="/login">Login</NavItem>
               <NavItem className="nav-signup-link" href="/sign-up">Sign Up</NavItem>
               <NavItem divider />
-              <NavItem href="https://github.com/zackrt/slam-crown">Github</NavItem>
               <NavItem href="/login">Sign Out</NavItem>
           </Dropdown>
         </nav>     

@@ -30,6 +30,9 @@ img {
 .description {
     display: inline;
 }
+.title-descrip {
+    margin:auto !important;
+}
 
 .loginlink {
     font-size: 28px;

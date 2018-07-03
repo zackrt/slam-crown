@@ -7,7 +7,7 @@ export class LandingPage extends Component {
   render() {
     return (
       <div>
-        <h1>A simple Concussion & Traumatic Brain Injury reporting app</h1>
+        <h2 className="title-descrip">A simple Concussion & Traumatic Brain Injury reporting app</h2>
           <div>
             <Button 
               waves='light' 
