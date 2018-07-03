@@ -27,16 +27,19 @@
 .legend {
   color: rgb(255, 255, 255);
 }
-.welcome-link {
+.link-title #welcome-link {
   color:white;
-  margin:auto;
+  display:block;
+  text-align: center;
 }
 .nav {
   background-color: inherit !important;
 }
-.footer-link, a {
+/*.footer-link, a {
   margin-left: 50%;
-}
-@media (min-width: 1400px) {
+  margin-bottom: 20px;
+}*/
+@media only screen and (min-width: 1400px) {
+  
   
 }

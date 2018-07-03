@@ -16,7 +16,8 @@ export class Login extends Component {
       emailAddress:this.state.email,
       password:this.state.password
     }).then(response => {
-      let disabledLink = document.getElementById('welcome-link')
+      //hide welcome link on login
+      let disabledLink = document.getElementById('welcome-link');
       disabledLink.classList.add('hiddenElement');
       console.log(response);
       const token = response.data.token;

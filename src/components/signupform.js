@@ -22,7 +22,7 @@ export class SignUp extends Component {
         }).then(response =>{ 
             console.log(response);
             this.props.history.push('/login');
-            //alert(`Account ${this.state.email} Created`);
+            alert(`Account ${this.state.email} created, click Login!`);
         })
         //console.log(this.state);
     }  
@@ -39,9 +39,11 @@ export class SignUp extends Component {
     console.log(this.state);
     return (
       <div>
-        <h1>
+          <div className="create-title">
+            <h1>
         Create an Account Today!
-        </h1>
+            </h1>
+          </div>
         <h2>
             Report on your Concussion & TBI Recovery
         </h2>

@@ -55,6 +55,10 @@ input[type=submit]:hover {
 .email-input-label {
     color:white !important;
 }
+/* Center H1 title*/
+.create-title {
+    margin-left:20% !important;
+}
 
 @media ( min-width: 648px) {
     span {
