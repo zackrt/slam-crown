@@ -11,6 +11,9 @@
 .instructions li {
     padding: 3px;
 }
+.instruct-li {
+    font-size: 20px;
+}
 .brainimage {
     display: inline-block;
     margin:20px;
