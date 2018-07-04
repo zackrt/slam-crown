@@ -32,8 +32,13 @@ export class UserPage extends Component {
             this.setState({
                 emailAddress : response.data.emailAddress
             })
+            // Remove welcome link!
+            let disabledWelcomeLink = document.getElementById('welcome-link');
+            disabledWelcomeLink.classList.add('hiddenElement');
+            
             let disabledLink = document.getElementById('navigation-login-link');
             disabledLink.classList.add('hiddenElement');
+            
             let disabledSignupLink = document.getElementById('navigation-signup-link');
             disabledSignupLink.classList.add('hiddenElement');
             
