@@ -108,7 +108,7 @@ export class UserPage extends Component {
                                 className="slider" id="myPainRange" 
                             />
                         </div>
-                            <button className="btn waves-effect waves-light"type="submit">Submit</button>
+                            <button className="submit-btn btn waves-effect waves-light" type="submit">Submit</button>
                         </div>
                         </form>
                 </section>
