@@ -1,12 +1,13 @@
 .instructions {
-    display: inline-block;
+    display: block;
     background-color: white;
     color:rgb(3, 3, 193);
     text-align: left;
-    margin: 10px;
+    margin: auto;
     padding:10px;
-    width: 40%;
+    width: 85%;
     border-radius: 5%;
+    
 }
 .instructions li {
     padding: 3px;
@@ -15,7 +16,7 @@
     font-size: 20px;
 }
 .brainimage {
-    display: inline-block;
+    display: block;
     margin:20px;
     width:35%;
 }
@@ -35,6 +36,15 @@ img {
 }
 .title-descrip {
     margin:auto !important;
+    display:block;
+    text-align: center;
+}
+h3 {
+    margin-top:5px;
+    margin-bottom:5px;
+    margin:auto !important;
+    display:block;
+    text-align: center;
 }
 
 .loginlink {
@@ -56,6 +66,11 @@ img {
 /* change image and instruction to display block */
 /* decrease FONT SIZE of Header in mobile */
 @media only and screen (max-width: 600px) {
+    .instructions {
+        display:block;
+        text-align: center;
+        width:100%
+    }
     .brainimage {
         display: block !important;
         margin: auto;
@@ -67,8 +82,5 @@ img {
         padding: 10px;
         border: 1px dotted red;
         width:100% !important;
-    }
-    .title-descrip {
-        font-size: 18px;
     }
 }

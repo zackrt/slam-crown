@@ -8,7 +8,7 @@ export class LandingPage extends Component {
     return (
       <div>
         <div className="title-descrip">
-          <h2>A simple Concussion & Traumatic Brain Injury reporting app</h2>
+          <h3 className="app-title">A simple Concussion & TBI reporting app</h3>
         </div>
           <div>
             <Button 
@@ -21,7 +21,7 @@ export class LandingPage extends Component {
             </Button>
           </div>
           <Link className="loginlink" to="/login">Log In & Sign In!</Link>
-            <h2>What does Slam Crown do?</h2>
+            <h3>What does Slam Crown do?</h3>
             <section className ="description">
               <ul className="instructions">
                 <li className="instruct-li">
