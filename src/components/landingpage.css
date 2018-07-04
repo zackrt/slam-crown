@@ -39,8 +39,8 @@ img {
 
 .loginlink {
     font-size: 28px;
-    display: inline;
-    margin-left: 5%;
+    display:block;
+    text-align: center !important;
     color: rgb(254, 254, 119);
 }
 @media only and screen ( min-width: 648px) {

@@ -20,7 +20,7 @@ export class LandingPage extends Component {
             Sign Up!
             </Button>
           </div>
-          <Link id="welcome-link"className="loginlink" to="/login">Log In & Sign In!</Link>
+          <Link className="loginlink" to="/login">Log In & Sign In!</Link>
             <h2>What does Slam Crown do?</h2>
             <section className ="description">
               <ul className="instructions">

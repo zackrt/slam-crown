@@ -35,7 +35,10 @@
 .nav {
   background-color: inherit !important;
 }
-
+.loginlink {
+  display:block;
+  text-align: center !important;
+}
 /*.footer-link, a {
   margin-left: 50%;
   margin-bottom: 20px;
