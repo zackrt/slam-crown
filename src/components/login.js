@@ -37,9 +37,9 @@ export class Login extends Component {
     console.log(this.state);
     return (
       <div>
-          <h1>
+          <h2>
             Login
-          </h1>
+          </h2>
             <form onSubmit={this.handleSubmit}>
               <fieldset>
                 <legend>Sign In:</legend>
