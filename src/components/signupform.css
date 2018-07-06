@@ -46,7 +46,11 @@ button[type=submit] {
 .date-picker-label {
     padding-left: 10px;
 }
-
+.sign-up-form {
+    text-align: center;
+    display: block;
+    margin:auto;
+}
 input[type=submit]:hover {
     background-color: palegreen;
 }

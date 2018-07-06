@@ -26,12 +26,15 @@ img {
     border-radius: 50%;
 }
 .signuplink {
-    font-size: 28px;
-    display: inline;
-    height: 50px !important;
-    margin:1px 5% 30% 20% !important;
-    color:blue;
-
+    font-size:28px;
+    display: block;
+    height:35px !important;
+    width:240px;
+    margin-top:30px;
+    margin-bottom:10px;
+    margin:auto !important;
+    color:white;
+    text-align: center;
 }
 .description {
     display: inline;
@@ -40,6 +43,7 @@ img {
     margin:auto !important;
     display:block;
     text-align: center;
+    margin-bottom:60px !importantç;
 }
 h3 {
     margin-top:5px;
@@ -50,6 +54,8 @@ h3 {
 }
 
 .loginlink {
+    margin-top:30px;
+    margin-bottom:30px;
     font-size: 28px;
     display:block;
     text-align: center !important;

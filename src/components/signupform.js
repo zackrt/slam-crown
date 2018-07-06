@@ -47,6 +47,7 @@ export class SignUp extends Component {
         <h2>
             Report on your Concussion & TBI Recovery
         </h2>
+            <div classname="sign-up-form">
             <form onSubmit={this.handleSubmit}>
                 <fieldset>
                     <legend className="legend">Sign Up:</legend>
@@ -91,6 +92,7 @@ export class SignUp extends Component {
                     </button>
                     <br />
             </form>
+            </div>
       </div>
     )
   }
