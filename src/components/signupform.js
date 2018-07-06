@@ -47,11 +47,12 @@ export class SignUp extends Component {
         <h2>
             Report on your Concussion & TBI Recovery
         </h2>
-            <div classname="sign-up-form">
+            <div >
             <form onSubmit={this.handleSubmit}>
                 <fieldset>
                     <legend className="legend">Sign Up:</legend>
-                        <br />        
+                        <br />
+                        <div className="sign-up-form">         
                     <Row>
                     <Input type="email" 
                         label="Email Address" 
@@ -64,6 +65,7 @@ export class SignUp extends Component {
                         aria-required="true" 
                         required
                     />
+                    <br/>
                         <Input type="password" 
                             label="Password" s={12}  
                             id="password" 
@@ -86,6 +88,7 @@ export class SignUp extends Component {
                             aria-required="true" 
                         />
                         </Row>
+                </div>
                 </fieldset>
                     <button className="submitbtn btn waves-effect waves-light pulse" type="submit" name="action">Submit!
                         <i className="material-icons right">send</i>

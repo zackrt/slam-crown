@@ -48,7 +48,7 @@ button[type=submit] {
 }
 .sign-up-form {
     text-align: center;
-    display: block;
+    display:block;
     margin:auto;
 }
 input[type=submit]:hover {
