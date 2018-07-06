@@ -16,6 +16,7 @@
     background-color:rgb(67, 235, 67);
     box-shadow: 2px 2px 2px;
     display:block;
+    margin-bottom: 60px!important;
 }
 .report-container {
     margin: auto;
