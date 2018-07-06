@@ -117,6 +117,9 @@
 .input-field {
     width:100% !important;
 }
+.hiddenElement {
+    display : none;
+  }
 @media ( min-width: 648px) {
     .symptomselector {
         width:60%;

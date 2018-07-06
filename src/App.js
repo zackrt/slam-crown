@@ -16,8 +16,8 @@ export default function App(props) {
                     <Navigationbar />  
                         <div className="link-title">
                             <header>
-                                <h1>
-                                    <Link id="welcome-link" to="/">Welcome to Slam Crown</Link>
+                                <h1 id="welcome-link">
+                                    <Link className="welcome-title-link" to="/">Welcome to Slam Crown</Link>
                                 </h1>
                             </header>
                         </div>
