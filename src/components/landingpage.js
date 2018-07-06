@@ -15,7 +15,7 @@ export class LandingPage extends Component {
               waves='light' 
               className="signuplink" 
               node='a' 
-              href='/sign-up'
+              href='./sign-up'
             >
             Sign Up!
             </Button>

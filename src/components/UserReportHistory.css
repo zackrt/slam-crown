@@ -17,8 +17,9 @@
     box-shadow: 2px 2px 2px;
 }
 .report-container {
-    margin-left: 25px;
-
+    margin: auto;
+    text-align:center;
+    overflow: scroll;
 }
 .logout-instruct {
    padding:0 25px;
