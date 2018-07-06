@@ -12,7 +12,9 @@ h1 {
     font: helvetica;
 }
 h2 {
-    padding-left: 22%;
+    display:block;
+    text-align: center;
+    margin:auto;
 }
 
 legend {
@@ -33,7 +35,7 @@ span {
     box-shadow: 2px 2px 2px;
 }
 button[type=submit] {
-    margin-top:10px !important;
+    margin-top:35px !important;
     margin:auto;
     margin-bottom:60px !important;
     background:rgb(49, 233, 33); 
@@ -42,6 +44,7 @@ button[type=submit] {
     -webkit-border-radius: 5px;
     border-radius: 5px; 
     width: 80%;
+    max-width: 300px;
 }
 .date-picker-label {
     padding-left: 10px;
@@ -68,10 +71,20 @@ input[type=submit]:hover {
 }
 /* Center H1 title*/
 .create-title {
-    margin-left:20% !important;
+    margin:auto;
+    display:block; 
+    text-align: center;
+}
+@media only screen and ( max-width: 600px) {
+    h2 {
+        font-size: 24px;
+    }
+    h1, .create-title {
+        font-size: 26px !important; 
+    }
 }
 
-@media ( min-width: 648px) {
+@media only screen and ( min-width: 648px) {
     span {
         display: block;
     }
