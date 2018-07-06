@@ -76,7 +76,8 @@ export class UserPage extends Component {
                 <h2>
                     Today's Report
                 </h2>
-                        <SymptomSelector 
+                        <SymptomSelector
+                            className="symptom-selector" 
                             onUpdate = {(selectedSymptoms) => 
                             this.setState({selectedSymptoms})}
                         /> 

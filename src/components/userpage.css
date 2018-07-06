@@ -15,6 +15,9 @@
 .pointer {
     cursor: pointer;
 }
+.symptom-selector {
+    cursor: pointer;
+}
 .btn-group {
     margin:0 20px 25px; 
 }
