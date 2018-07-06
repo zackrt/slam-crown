@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Dropdown, NavItem, Button} from 'react-materialize';
+import {Dropdown, MenuItem, Button} from 'react-materialize';
 //import {Link} from 'react-router-dom';
 import './NavigationBar.css';
 //Place GITHUB Link in footer!
@@ -11,10 +11,10 @@ export class NavigationBar extends Component {
           <Dropdown trigger={
             <Button className="dropdown-btn">Menu</Button>
             }>
-              <NavItem id="navigation-login-link" className="nav-login-link" href="/login">Login</NavItem>
-              <NavItem id="navigation-signup-link" className="nav-signup-link" href="/sign-up">Sign Up</NavItem>
-              <NavItem divider />
-              <NavItem href="/login">Sign Out</NavItem>
+              <MenuItem id="navigation-login-link" className="nav-login-link menu-item" href="/login">Login</MenuItem>
+              <MenuItem id="navigation-signup-link" className="nav-signup-link menu-item" href="/sign-up">Sign Up</MenuItem>
+              <MenuItem className="menu-item" divider />
+              <MenuItem className="menu-item" href="/login">Sign Out</MenuItem>
           </Dropdown>
         </nav>     
       </div>
