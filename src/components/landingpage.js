@@ -11,14 +11,12 @@ export class LandingPage extends Component {
           <h3 className="app-title">A simple Concussion & TBI reporting app</h3>
         </div>
           <div>
-            <Button
-              waves='light' 
-              className="signuplink" 
-              node='a' 
-              href='/sign-up'
+            <Link
+              className="signuplink"  
+              to='/sign-up'
             >
             Sign Up!
-            </Button>
+            </Link>
           </div>
           <Link className="loginlink" to="/login">Log In & Sign In!</Link>
             <h3>What does Slam Crown do?</h3>
