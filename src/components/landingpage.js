@@ -11,7 +11,7 @@ export class LandingPage extends Component {
           <h3 className="app-title">A simple Concussion & TBI reporting app</h3>
         </div>
           <div>
-            <Button 
+            <Button
               waves='light' 
               className="signuplink" 
               node='a' 
