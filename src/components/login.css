@@ -28,3 +28,13 @@ body {
   margin:auto;
   max-width: 300px;
 }
+.div, .row {
+  margin-top:20px;
+  margin-left: 35%;
+}
+h2 {
+  display:block;
+  text-align: center;
+  margin:auto;
+  margin-bottom: 20px;
+}

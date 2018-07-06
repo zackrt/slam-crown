@@ -114,6 +114,9 @@ export class UserPage extends Component {
                                 className="slider" id="myPainRange" 
                             />
                         </div>
+                        <div className="pain-level-display">
+                                You selected {this.state.painLevel}    
+                        </div>
                             <button className="submit-btn btn waves-effect waves-light" type="submit">Submit</button>
                         </div>
                         </form>

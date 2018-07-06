@@ -32,6 +32,11 @@
 .nav {
   background-color: inherit !important;
 }
+fieldset {
+  max-width: 800px;
+  display:block;
+  margin:auto;
+}
 
 @media only screen and (min-width: 1400px) {
 
