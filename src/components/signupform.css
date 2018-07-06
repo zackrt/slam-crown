@@ -43,6 +43,9 @@ button[type=submit] {
     border-radius: 5px; 
     width: 80%;
 }
+.date-picker-label {
+    padding-left: 10px;
+}
 
 input[type=submit]:hover {
     background-color: palegreen;
