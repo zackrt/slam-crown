@@ -64,7 +64,7 @@ export class SignUp extends Component {
                         required
                     />
                         <Input type="password" 
-                            label="password" s={12}  
+                            label="Password" s={12}  
                             id="password" 
                             placeholder="password" 
                             onInput={e => this.updateModel('password',e)}
@@ -75,7 +75,7 @@ export class SignUp extends Component {
                     </Row>
                         <br />
                         <Row>
-                        <label className="date-picker-label">date of Concussion:</label>
+                        <label className="date-picker-label">Date of Concussion:</label>
                         <Input 
                             name='on' 
                             type='date' 
