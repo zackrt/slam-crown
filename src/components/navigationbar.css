@@ -1,7 +1,7 @@
 nav {
     background-color: inherit !important;
     display: block;
-    height: 100px;
+    /*height: 100px; */
   }
 .dropdown-btn {
     width:25% !important;
