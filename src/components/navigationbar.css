@@ -12,3 +12,7 @@ nav {
     padding:5px;
     text-align: center;
 }
+span.welcome-title-nav {
+    padding-left: 10px;
+    display:inline;
+}

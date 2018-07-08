@@ -8,6 +8,7 @@ export class NavigationBar extends Component {
     return (
       <div>
         <nav className="NavBar">
+        <span className="welcome-title-nav" width="100px">SLAM CROWN</span>
           <Dropdown trigger={
             <Button className="dropdown-btn">Menu</Button>
             }>
