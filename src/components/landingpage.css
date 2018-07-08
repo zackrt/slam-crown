@@ -27,7 +27,7 @@
 img {
     border-radius: 50%;
 }
-.signuplink {
+a.signuplink {
     font-size:28px;
     display: block;
     height:35px !important;
@@ -37,6 +37,7 @@ img {
     margin:auto !important;
     color:white;
     text-align: center;
+    text-decoration: underline;
 }
 .description {
     display: inline;

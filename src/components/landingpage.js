@@ -11,14 +11,14 @@ export class LandingPage extends Component {
           <h3 className="app-title">A simple Concussion & TBI reporting app</h3>
         </div>
           <div>
-            <Link
+          <u><Link
               className="signuplink"  
               to='/sign-up'
             >
             Sign Up!
-            </Link>
+            </Link></u>
           </div>
-          <Link className="loginlink" to="/login">Login!</Link>
+          <u><Link className="loginlink" to="/login">Login!</Link></u>
             <h3>What does Slam Crown do?</h3>
             <section className ="description">
               <ul className="instructions">
