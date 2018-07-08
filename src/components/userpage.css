@@ -131,6 +131,13 @@
     text-align: center;
     font-size: 18px;
 }
+.welcome-back-user {
+    display:block;
+    margin:auto;
+    text-align:center;
+    padding:5%;
+    font-size: 26px;
+}
 @media ( min-width: 648px) {
     .symptomselector {
         width:60%;

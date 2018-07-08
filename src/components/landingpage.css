@@ -8,9 +8,11 @@
     width: 85%;
     margin-top:15px;
     
+    
 }
 .instructions li {
     padding: 3px;
+    padding-left: 40px;
 }
 .instruct-li {
     font-size: 20px;

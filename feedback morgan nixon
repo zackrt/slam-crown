@@ -1,8 +1,8 @@
 Zachary, great concept on this final project of yours. 
 The project is very close to meeting approval, it just needs a final round of refinement, and the app will be in a good position as a portfolio piece. 
-- The nav bar looks odd without a logo or project bar in the top left. This is a standard web convention. The lack of a title or logo makes the project look unbranded. 
+V - The nav bar looks odd without a logo or project bar in the top left. This is a standard web convention. The lack of a title or logo makes the project look unbranded. 
 - Considering you only have three menu choices why even put them in a responsive nav? It seems like one extra unnecessary click from a UX perspective. You could fit the options in the nav menu sitting next to each other even with the addition of a project title/logo to the far left. 
 V - On the landing page, The Sign-Up and Login links should look more like buttons to me, to visually differentiate them. The "Log In and Sign In" button could be shortened just to read "Login". 
 - The landing page info below the sign in and log in links needs left padding. - The login and sign up inputs on these pages need left padding as well. - The 
-Welcome back text doesn't need to be so large; it should also be centered to be consistent with the rest of the page alignment. 
+V Welcome back text doesn't need to be so large; it should also be centered to be consistent with the rest of the page alignment. 
 - The grey text isn't creating a sharp contrast with the blue gradient background; I would lighten all instances of this grey colored text. With just a little more visual refinement I expect this project to meet approval. Keep working hard you are so close! Best, Morgan Nixon Lead Capstone Grader 

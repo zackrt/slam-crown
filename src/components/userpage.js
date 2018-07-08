@@ -70,8 +70,8 @@ export class UserPage extends Component {
     console.log(this.state);
     return (
       <div>
-            <h1>
-                Welcome back, User {this.state.emailAddress}
+            <h1 className="welcome-back-user">
+                Welcome back, user {this.state.emailAddress}
             </h1>
                 <h2>
                     Today's Report
