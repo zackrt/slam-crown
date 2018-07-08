@@ -25,7 +25,7 @@ legend {
 }
 span {
     font: 1.5em helvetica;
-    display: block;
+    /*display: block; */
     margin: 5px 0 5px 0;
 }
 .submitbtn {
@@ -88,7 +88,7 @@ input[type=submit]:hover {
 
 @media only screen and ( min-width: 648px) {
     span {
-        display: block;
+       /* display: block; */
     }
     form {
         display: inline;
