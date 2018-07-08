@@ -51,6 +51,10 @@ button[type=submit] {
 }
 .date-picker-label {
     padding-left: 10px;
+    
+}
+label.date-picker-label {
+    color:white !important;
 }
 .sign-up-form {
     display:block;
