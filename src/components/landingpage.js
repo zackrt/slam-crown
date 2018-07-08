@@ -18,7 +18,7 @@ export class LandingPage extends Component {
             Sign Up!
             </Link>
           </div>
-          <Link className="loginlink" to="/login">Log In & Sign In!</Link>
+          <Link className="loginlink" to="/login">Log In</Link>
             <h3>What does Slam Crown do?</h3>
             <section className ="description">
               <ul className="instructions">
