@@ -40,9 +40,9 @@ export class SignUp extends Component {
     return (
       <div>
           <div className="create-title">
-            <h1>
+            <h2>
         Create an Account Today!
-            </h1>
+            </h2>
           </div>
         <h2>
             Report on your Concussion & TBI Recovery
