@@ -29,8 +29,9 @@ body {
   max-width: 300px;
 }
 .div, .row {
-  margin-top:20px;
-  margin-left: 35%;
+  margin-top: 20px;
+  margin: 0 29%;
+  width: 50%;
 }
 h2 {
   display:block;
