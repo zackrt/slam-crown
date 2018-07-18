@@ -81,6 +81,12 @@ input[type=submit]:hover {
     display:block; 
     text-align: center;
 }
+@media only screen and ( max-width: 640px) {
+    .row {
+        margin: 0 auto !important;
+        width: 44%;
+    }
+}
 @media only screen and ( max-width: 600px) {
     .row {
         margin: 0 auto !important;
