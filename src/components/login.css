@@ -28,10 +28,11 @@ body {
   margin:auto;
   max-width: 300px;
 }
-.div, .row {
+.row {
+  display: block;
   margin-top: 20px;
-  margin: 0 29%;
-  width: 80%;
+  margin: 0 auto;
+  width: 51%;
 }
 h2 {
   display:block;

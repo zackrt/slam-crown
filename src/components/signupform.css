@@ -110,7 +110,7 @@ input[type=submit]:hover {
         color: rgba(245, 245, 245, 0.897);
     }
     input {
-        max-width: 50%;
+        /*max-width: 50%;*/
         height: 40px;
         font-size: 1.2em;
     }
