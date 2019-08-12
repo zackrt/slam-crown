@@ -2,6 +2,8 @@
 
 This repo is the full stack front end client side version of the app coded.
 
+needs redesign, to look fresher
+
 Link: https://slamcrown.netlify.com/
 
 Demo the app!
