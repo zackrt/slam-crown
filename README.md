@@ -1,4 +1,4 @@
-## Slam Crown - is a concussion and mild traumatic brain injury reporting web app for desktop and mobile.
+## Slam Crown - is a concussion and mild traumatic brain injury mTBI reporting web app for desktop and mobile.
 
 This repo is the full stack front end client side version of the app coded.
 
